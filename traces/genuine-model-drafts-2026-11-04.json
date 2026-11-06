@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "eewr-genuine-model-drafts.v1",
+  "capturedAtLocal": "2026-11-04 10:48 +0800",
+  "product": "EEWR — Executive Early Warning Radar",
+  "positioning": "Executive Knowledge & Early Warning Intelligence",
+  "challenge": "Challenge A — Workplace Knowledge Brain (Otak Pengetahuan Kerja)",
+  "scenario": "Project History (Riwayat proyek) — CONFIRMED",
+  "team": "BRONX",
+  "organization": "XRC",
+  "attribution": "Team BRONX",
+  "whatThisIs": "Two GENUINE language-model outputs captured this cycle through the session-native Agent subagent channel (a real model inference). Each model received ONLY the authorised citation snippets listed below plus a strict 'draft prose from these snippets only, no tools, no web, no files' instruction, and returned the verbatim text in modelOutputVerbatim. These demonstrate the N7 OptionalModelDraft step of the workflow: evidence-grounded prose drafting.",
+  "whatThisIsNot": "NOT an inference performed by the deployed deterministic prototype (its model node stays disabled/fail-closed, liveInference=false). NOT a host-platform run. NOT a G1-G6 verification. NOT a functional-AI claim about the shipped build. No platform account was accessed, no free credits were consumed, no paid billing was enabled, no API key or credential was used or exposed. The prose was produced by the sandbox's own session model channel at zero platform cost and is replayed deterministically by the offline output guard.",
+  "channel": "session-native Agent subagent (general-purpose), real model inference",
+  "trustBoundaryEnforced": {
+    "modelSawOnly": ["the question", "the authorised citation snippets listed per case", "a strict drafting instruction"],
+    "modelNeverSaw": ["permission table", "full corpus", "restricted items", "action tools", "audit writer"],
+    "downstreamDeterministicGuard": "agent/output-guard.js (answer-branch grounding check + refusal-branch template)"
+  },
+  "drafts": [
+    {
+      "caseId": "PROJECT-HISTORY-GROUNDED",
+      "agentId": "agent-8d9c4425-841c-4640-a2bf-d6179d0263a9",
+      "question": "Mengapa stok terlambat di Makassar, dan apa yang masih terbuka?",
+      "userId": "usr-sari",
+      "authorisedCitations": ["KB-009 | chat | 2026-10-22 | riwayat-proyek | 'Ekspor chat #operasi, pesan 2026-10-22 (sintetis)'"],
+      "ownerRoute": "TGC — Project Lead (peran fiktif)",
+      "modelOutputVerbatim": "Bapak/Ibu staf, diskusi tim mencatat penyebab keterlambatan stok dan daftar item yang masih terbuka beserta penanggung jawabnya, namun rincian keduanya tidak termuat dalam catatan ini. Seluruh lokasi dan pihak bersifat sintetis."
+    },
+    {
+      "caseId": "UJI-2-CONFLICT-GROUNDED",
+      "agentId": "agent-79571b79-af8f-4577-ae78-831dcdb6d3b6",
+      "question": "Berapa tunjangan bahan bakar bulanan saat ini?",
+      "userId": "usr-andi",
+      "authorisedCitations": [
+        "KB-001 | document | 2026-09-01 | reimbursement | SOP-KEU-2026-09 | claim value Rp500.000 | supersededBy KB-002",
+        "KB-002 | chat | 2026-10-18 | reimbursement | 'Ekspor chat #umum, pesan 2026-10-18 (sintetis)' | claim value Rp750.000"
+      ],
+      "modelOutputVerbatim": "Tunjangan bahan bakar bulanan saat ini adalah Rp750.000, berlaku mulai Oktober 2026 sesuai pengumuman HR yang lebih baru (KB-002). Nilai Rp500.000 pada SOP sebelumnya (KB-001) kini usang atau sudah digantikan oleh ketentuan tersebut."
+    }
+  ],
+  "honestLimitation": "The output guard enforces NUMERIC/figure grounding (every figure stated must exist in the authorised citations), not full semantic entailment. The deterministic composed answer with its full sources[] remains the canonical, auditable record; model prose is an optional, guarded presentation layer."
+}

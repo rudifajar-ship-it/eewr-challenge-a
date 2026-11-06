@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "eewr-shot8-approval-gate.v1",
+  "title": "S7 Shot 8 — the approval wait (MANDATORY shot)",
+  "product": "EEWR — Executive Early Warning Radar",
+  "positioning": "Executive Knowledge & Early Warning Intelligence",
+  "challenge": "Challenge A — Workplace Knowledge Brain",
+  "scenario": "Project History (Riwayat proyek) — CONFIRMED",
+  "team": "BRONX",
+  "organization": "XRC",
+  "attribution": "Team BRONX",
+  "timebase": "2026-11-04T05:40:00+08:00",
+  "dataClassification": "100% SYNTHETIC TEST DATA — official kickoff dataset NOT yet received",
+  "whatThisIs": "A real foreground run of the deterministic risk-path prototype, re-executable offline.",
+  "whatThisIsNot": "NOT a host-platform run / console screenshot / exported workflow. NOT live model inference (AI (simulasi), provider disabled and fail-closed). NOT a GUI screen capture.",
+  "billing": "0 accounts, 0 credits, 0 credentials, 0 paid billing, 0 network calls",
+  "runId": "RUN-bbac82028096291e",
+  "steps": [
+    {
+      "id": "S1",
+      "label": "ask — propose only, gate closed",
+      "argv": [
+        "node",
+        "agent/run.js",
+        "ask",
+        "Apa risiko kekeringan terhadap operasi TGC dan tindakan apa yang harus disetujui?",
+        "--state=/tmp/demo-state8",
+        "--now=2026-11-04T05:40:00+08:00"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"schemaVersion\": \"eewr-agent-run.v1\",\n  \"runId\": \"RUN-bbac82028096291e\",\n  \"createdAt\": \"2026-11-04T05:40:00+08:00\",\n  \"question\": \"Apa risiko kekeringan terhadap operasi TGC dan tindakan apa yang harus disetujui?\",\n  \"disclosure\": {\n    \"product\": \"EEWR — Executive Early Warning Radar\",\n    \"team\": \"BRONX\",\n    \"organization\": \"XRC\",\n    \"representedBy\": \"Team BRONX\",\n    \"industry\": \"Natural resource-based industries\",\n    \"demoEntity\": \"The Goodlight Company (TGC)\",\n    \"data\": \"100% synthetic; not real-world data\",\n    \"capability\": \"Deterministic, auditable agent WORKFLOW — not an autonomous agent, not functional AI\",\n    \"model\": \"No live model inference (AI (simulasi))\",\n    \"approval\": \"No action is recorded until a named human explicitly approves it\",\n    \"independence\": \"Independent project — not affiliated with, endorsed by, or representative of any employer, client or third party\"\n  },\n  \"model\": {\n    \"mode\": \"deterministic-simulation\",\n    \"wording\": \"AI (simulasi)\",\n    \"liveInference\": false,\n    \"provider\": \"none\",\n    \"networkCallsPermitted\": false\n  },\n  \"retrieval\": {\n    \"question\": \"Apa risiko kekeringan terhadap operasi TGC dan tindakan apa yang harus disetujui?\",\n    \"tokens\": [\n      \"kekeringan\",\n      \"terhadap\",\n      \"operasi\",\n      \"tgc\",\n      \"tindakan\",\n      \"disetujui\"\n    ],\n    \"minScore\": 1,\n    \"candidateCount\": 8,\n    \"hits\": [\n      {\n        \"evidenceId\": \"EVD-008\",\n        \"title\": \"Prior recorded action ACT-301 assigned to a fictional TGC role; residual 68\",\n        \"date\": \"2026-10-30\",\n        \"category\": \"action-history\",\n        \"source\": \"Synthetic dataset — EEWR demo, Executive Action Tracker\",\n        \"score\": 10.2537,\n        \"breakdown\": [\n          {\n            \"token\": \"tgc\",\n            \"idf\": 0.636,\n            \"contribution\": 3.8159\n          },\n          {\n            \"token\": \"tindakan\",\n            \"idf\": 1.6094,\n            \"contribution\": 3.2189\n          },\n          {\n            \"token\": \"disetujui\",\n            \"idf\": 1.6094,\n            \"contribution\": 3.2189\n          }\n        ],\n        \"metrics\": {\n          \"p\": 50,\n          \"i\": 65,\n          \"u\": 58\n        },\n        \"quote\": \"The synthetic action register contains 27 actions. ACT-301 was assigned to a synthetic TGC role. Residual risk after mitigation is 68. Actions are stored locally in the browser only, not across devices.\",\n        \"synthetic\": true\n      },\n      {\n        \"evidenceId\": \"EVD-001\",\n        \"title\": \"Drought index rose from 67.5 to 73.3 at TGC operating area\",\n        \"date\": \"2026-10-28\",\n        \"category\": \"climate-operations\",\n        \"source\": \"Synthetic dataset — EEWR demo, signal SIG-8801 / alert EWR-1042\",\n        \"score\": 9.6334,\n        \"breakdown\": [\n          {\n            \"token\": \"kekeringan\",\n            \"idf\": 1.6094,\n            \"contribution\": 3.2189\n          },\n          {\n            \"token\": \"operasi\",\n            \"idf\": 1.2993,\n            \"contribution\": 2.5986\n          },\n          {\n            \"token\": \"tgc\",\n            \"idf\": 0.636,\n            \"contribution\": 3.8159\n          }\n        ],\n        \"metrics\": {\n          \"p\": 72,\n          \"i\": 80,\n          \"u\": 70\n        },\n        \"quote\": \"Synthetic signal SIG-8801 and early-warning EWR-1042 record a rising drought index from 67.5 to 73.3. Water availability for processing is projected to tighten. This is simulated monitoring data for TGC, not a real measurement.\",\n        \"synthetic\": true\n      },\n      {\n        \"evidenceId\": \"EVD-005\",\n        \"title\": \"River transport reliability declined in the synthetic logistics feed\",\n        \"date\": \"2026-10-27\",\n        \"category\": \"logistics\",\n        \"source\": \"Synthetic dataset — EEWR demo, logistics signals\",\n        \"score\": 3.8705,\n        \"breakdown\": [\n          {\n            \"token\": \"operasi\",\n            \"idf\": 1.2993,\n            \"contribution\": 2.5986\n          },\n          {\n            \"token\": \"tgc\",\n            \"idf\": 0.636,\n            \"contribution\": 1.272\n          }\n        ],\n        \"metrics\": {\n          \"p\": 68,\n          \"i\": 72,\n          \"u\": 66\n        },\n        \"quote\": \"Simulated logistics telemetry shows reduced river transport reliability, which can compound climate-related operating constraints.\",\n        \"synthetic\": true\n      }\n    ],\n    \"method\": \"deterministic tf-idf-style keyword scoring over a fixed synthetic corpus; no model inference\",\n    \"sufficient\": true\n  },\n  \"status\": \"AWAITING_HUMAN_APPROVAL\",\n  \"humanApprovalRequired\": true,\n  \"recommendation\": {\n    \"status\": \"RECOMMENDATION_READY\",\n    \"formula\": \"score = p*0.35 + i*0.40 + u*0.25\",\n    \"weights\": {\n      \"p\": 0.35,\n      \"i\": 0.4,\n      \"u\": 0.25\n    },\n    \"factors\": {\n      \"p\": 61.85,\n      \"i\": 72.22,\n      \"u\": 64.17\n    },\n    \"score\": 66.58,\n    \"band\": \"MODERAT / MODERATE\",\n    \"provenance\": [\n      {\n        \"evidenceId\": \"EVD-008\",\n        \"retrievalScore\": 10.2537,\n        \"weight\": 0.4316,\n        \"contribution\": {\n          \"p\": 21.5798,\n          \"i\": 28.0538,\n          \"u\": 25.0326\n        }\n      },\n      {\n        \"evidenceId\": \"EVD-001\",\n        \"retrievalScore\": 9.6334,\n        \"weight\": 0.4055,\n        \"contribution\": {\n          \"p\": 29.1951,\n          \"i\": 32.439,\n          \"u\": 28.3841\n        }\n      },\n      {\n        \"evidenceId\": \"EVD-005\",\n        \"retrievalScore\": 3.8705,\n        \"weight\": 0.1629,\n        \"contribution\": {\n          \"p\": 11.0783,\n          \"i\": 11.73,\n          \"u\": 10.7525\n        }\n      }\n    ],\n    \"grounding\": [\n      {\n        \"evidenceId\": \"EVD-008\",\n        \"source\": \"Synthetic dataset — EEWR demo, Executive Action Tracker\",\n        \"quote\": \"The synthetic action register contains 27 actions. ACT-301 was assigned to a synthetic TGC role. Residual risk after mitigation is 68. Actions are stored locall\",\n        \"usedFor\": \"risk factor inputs p/i/u and narrative basis\"\n      },\n      {\n        \"evidenceId\": \"EVD-001\",\n        \"source\": \"Synthetic dataset — EEWR demo, signal SIG-8801 / alert EWR-1042\",\n        \"quote\": \"Synthetic signal SIG-8801 and early-warning EWR-1042 record a rising drought index from 67.5 to 73.3. Water availability for processing is projected to tighten.\",\n        \"usedFor\": \"risk factor inputs p/i/u and narrative basis\"\n      },\n      {\n        \"evidenceId\": \"EVD-005\",\n        \"source\": \"Synthetic dataset — EEWR demo, logistics signals\",\n        \"quote\": \"Simulated logistics telemetry shows reduced river transport reliability, which can compound climate-related operating constraints.\",\n        \"usedFor\": \"risk factor inputs p/i/u and narrative basis\"\n      }\n    ],\n    \"statement\": \"Based on 3 synthetic evidence item(s) [EVD-008, EVD-001, EVD-005], the composite risk score is 66.58 of 100 (MODERAT / MODERATE). Recommendation: verify the previously recorded action and confirm its residual-risk effect. This is a deterministic, evidence-anchored computation — not a model-generated opinion.\",\n    \"disclosure\": \"Deterministic simulation (AI (simulasi)); no live model inference.\"\n  },\n  \"proposedActions\": [\n    {\n      \"actionId\": \"RUN-bbac82028096291e-A1\",\n      \"title\": \"Verifikasi tindakan ACT-301 dan konfirmasi dampak residual\",\n      \"ownerRole\": \"TGC Finance Lead (synthetic role)\",\n      \"dueInDays\": 3,\n      \"rationale\": \"Derived from EVD-008 (Prior recorded action ACT-301 assigned to a fictional TGC role; residual 68) and composite score 66.58.\",\n      \"linkedEvidence\": [\n        \"EVD-008\"\n      ],\n      \"allCitedEvidence\": [\n        \"EVD-008\",\n        \"EVD-001\",\n        \"EVD-005\"\n      ],\n      \"status\": \"PENDING_HUMAN_APPROVAL\",\n      \"recorded\": false,\n      \"synthetic\": true\n    },\n    {\n      \"actionId\": \"RUN-bbac82028096291e-A2\",\n      \"title\": \"Jalankan tinjauan ketersediaan air dan kontingensi operasi 14 hari\",\n      \"ownerRole\": \"TGC — Head of Operations (peran fiktif)\",\n      \"dueInDays\": 3,\n      \"rationale\": \"Derived from EVD-001 (Drought index rose from 67.5 to 73.3 at TGC operating area) and composite score 66.58.\",\n      \"linkedEvidence\": [\n        \"EVD-001\"\n      ],\n      \"allCitedEvidence\": [\n        \"EVD-008\",\n        \"EVD-001\",\n        \"EVD-005\"\n      ],\n      \"status\": \"PENDING_HUMAN_APPROVAL\",\n      \"recorded\": false,\n      \"synthetic\": true\n    }\n  ],\n  \"recording\": {\n    \"recorded\": false,\n    \"entries\": 0,\n    \"blockedUntil\": \"explicit approve() by a named human approver\"\n  }\n}\n",
+      "stderr": "",
+      "stdoutSha256": "7b98c9279ef7a7af334111472d2e6426cf65977f09614470c0dbb8efc29a4592"
+    },
+    {
+      "id": "S2",
+      "label": "ledger — still empty after ask",
+      "argv": [
+        "node",
+        "agent/run.js",
+        "ledger",
+        "--state=/tmp/demo-state8",
+        "--now=2026-11-04T05:40:00+08:00"
+      ],
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": "",
+      "stdoutSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "id": "S3",
+      "label": "approve — named human approval recorded",
+      "argv": [
+        "node",
+        "agent/run.js",
+        "approve",
+        "RUN-bbac82028096291e",
+        "Team BRONX",
+        "Approved for demo",
+        "--state=/tmp/demo-state8",
+        "--now=2026-11-04T05:40:00+08:00"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"schemaVersion\": \"eewr-agent-run.v1\",\n  \"runId\": \"RUN-bbac82028096291e\",\n  \"createdAt\": \"2026-11-04T05:40:00+08:00\",\n  \"question\": \"Apa risiko kekeringan terhadap operasi TGC dan tindakan apa yang harus disetujui?\",\n  \"disclosure\": {\n    \"product\": \"EEWR — Executive Early Warning Radar\",\n    \"team\": \"BRONX\",\n    \"organization\": \"XRC\",\n    \"representedBy\": \"Team BRONX\",\n    \"industry\": \"Natural resource-based industries\",\n    \"demoEntity\": \"The Goodlight Company (TGC)\",\n    \"data\": \"100% synthetic; not real-world data\",\n    \"capability\": \"Deterministic, auditable agent WORKFLOW — not an autonomous agent, not functional AI\",\n    \"model\": \"No live model inference (AI (simulasi))\",\n    \"approval\": \"No action is recorded until a named human explicitly approves it\",\n    \"independence\": \"Independent project — not affiliated with, endorsed by, or representative of any employer, client or third party\"\n  },\n  \"model\": {\n    \"mode\": \"deterministic-simulation\",\n    \"wording\": \"AI (simulasi)\",\n    \"liveInference\": false,\n    \"provider\": \"none\",\n    \"networkCallsPermitted\": false\n  },\n  \"retrieval\": {\n    \"question\": \"Apa risiko kekeringan terhadap operasi TGC dan tindakan apa yang harus disetujui?\",\n    \"tokens\": [\n      \"kekeringan\",\n      \"terhadap\",\n      \"operasi\",\n      \"tgc\",\n      \"tindakan\",\n      \"disetujui\"\n    ],\n    \"minScore\": 1,\n    \"candidateCount\": 8,\n    \"hits\": [\n      {\n        \"evidenceId\": \"EVD-008\",\n        \"title\": \"Prior recorded action ACT-301 assigned to a fictional TGC role; residual 68\",\n        \"date\": \"2026-10-30\",\n        \"category\": \"action-history\",\n        \"source\": \"Synthetic dataset — EEWR demo, Executive Action Tracker\",\n        \"score\": 10.2537,\n        \"breakdown\": [\n          {\n            \"token\": \"tgc\",\n            \"idf\": 0.636,\n            \"contribution\": 3.8159\n          },\n          {\n            \"token\": \"tindakan\",\n            \"idf\": 1.6094,\n            \"contribution\": 3.2189\n          },\n          {\n            \"token\": \"disetujui\",\n            \"idf\": 1.6094,\n            \"contribution\": 3.2189\n          }\n        ],\n        \"metrics\": {\n          \"p\": 50,\n          \"i\": 65,\n          \"u\": 58\n        },\n        \"quote\": \"The synthetic action register contains 27 actions. ACT-301 was assigned to a synthetic TGC role. Residual risk after mitigation is 68. Actions are stored locally in the browser only, not across devices.\",\n        \"synthetic\": true\n      },\n      {\n        \"evidenceId\": \"EVD-001\",\n        \"title\": \"Drought index rose from 67.5 to 73.3 at TGC operating area\",\n        \"date\": \"2026-10-28\",\n        \"category\": \"climate-operations\",\n        \"source\": \"Synthetic dataset — EEWR demo, signal SIG-8801 / alert EWR-1042\",\n        \"score\": 9.6334,\n        \"breakdown\": [\n          {\n            \"token\": \"kekeringan\",\n            \"idf\": 1.6094,\n            \"contribution\": 3.2189\n          },\n          {\n            \"token\": \"operasi\",\n            \"idf\": 1.2993,\n            \"contribution\": 2.5986\n          },\n          {\n            \"token\": \"tgc\",\n            \"idf\": 0.636,\n            \"contribution\": 3.8159\n          }\n        ],\n        \"metrics\": {\n          \"p\": 72,\n          \"i\": 80,\n          \"u\": 70\n        },\n        \"quote\": \"Synthetic signal SIG-8801 and early-warning EWR-1042 record a rising drought index from 67.5 to 73.3. Water availability for processing is projected to tighten. This is simulated monitoring data for TGC, not a real measurement.\",\n        \"synthetic\": true\n      },\n      {\n        \"evidenceId\": \"EVD-005\",\n        \"title\": \"River transport reliability declined in the synthetic logistics feed\",\n        \"date\": \"2026-10-27\",\n        \"category\": \"logistics\",\n        \"source\": \"Synthetic dataset — EEWR demo, logistics signals\",\n        \"score\": 3.8705,\n        \"breakdown\": [\n          {\n            \"token\": \"operasi\",\n            \"idf\": 1.2993,\n            \"contribution\": 2.5986\n          },\n          {\n            \"token\": \"tgc\",\n            \"idf\": 0.636,\n            \"contribution\": 1.272\n          }\n        ],\n        \"metrics\": {\n          \"p\": 68,\n          \"i\": 72,\n          \"u\": 66\n        },\n        \"quote\": \"Simulated logistics telemetry shows reduced river transport reliability, which can compound climate-related operating constraints.\",\n        \"synthetic\": true\n      }\n    ],\n    \"method\": \"deterministic tf-idf-style keyword scoring over a fixed synthetic corpus; no model inference\",\n    \"sufficient\": true\n  },\n  \"status\": \"RECORDED\",\n  \"humanApprovalRequired\": true,\n  \"recommendation\": {\n    \"status\": \"RECOMMENDATION_READY\",\n    \"formula\": \"score = p*0.35 + i*0.40 + u*0.25\",\n    \"weights\": {\n      \"p\": 0.35,\n      \"i\": 0.4,\n      \"u\": 0.25\n    },\n    \"factors\": {\n      \"p\": 61.85,\n      \"i\": 72.22,\n      \"u\": 64.17\n    },\n    \"score\": 66.58,\n    \"band\": \"MODERAT / MODERATE\",\n    \"provenance\": [\n      {\n        \"evidenceId\": \"EVD-008\",\n        \"retrievalScore\": 10.2537,\n        \"weight\": 0.4316,\n        \"contribution\": {\n          \"p\": 21.5798,\n          \"i\": 28.0538,\n          \"u\": 25.0326\n        }\n      },\n      {\n        \"evidenceId\": \"EVD-001\",\n        \"retrievalScore\": 9.6334,\n        \"weight\": 0.4055,\n        \"contribution\": {\n          \"p\": 29.1951,\n          \"i\": 32.439,\n          \"u\": 28.3841\n        }\n      },\n      {\n        \"evidenceId\": \"EVD-005\",\n        \"retrievalScore\": 3.8705,\n        \"weight\": 0.1629,\n        \"contribution\": {\n          \"p\": 11.0783,\n          \"i\": 11.73,\n          \"u\": 10.7525\n        }\n      }\n    ],\n    \"grounding\": [\n      {\n        \"evidenceId\": \"EVD-008\",\n        \"source\": \"Synthetic dataset — EEWR demo, Executive Action Tracker\",\n        \"quote\": \"The synthetic action register contains 27 actions. ACT-301 was assigned to a synthetic TGC role. Residual risk after mitigation is 68. Actions are stored locall\",\n        \"usedFor\": \"risk factor inputs p/i/u and narrative basis\"\n      },\n      {\n        \"evidenceId\": \"EVD-001\",\n        \"source\": \"Synthetic dataset — EEWR demo, signal SIG-8801 / alert EWR-1042\",\n        \"quote\": \"Synthetic signal SIG-8801 and early-warning EWR-1042 record a rising drought index from 67.5 to 73.3. Water availability for processing is projected to tighten.\",\n        \"usedFor\": \"risk factor inputs p/i/u and narrative basis\"\n      },\n      {\n        \"evidenceId\": \"EVD-005\",\n        \"source\": \"Synthetic dataset — EEWR demo, logistics signals\",\n        \"quote\": \"Simulated logistics telemetry shows reduced river transport reliability, which can compound climate-related operating constraints.\",\n        \"usedFor\": \"risk factor inputs p/i/u and narrative basis\"\n      }\n    ],\n    \"statement\": \"Based on 3 synthetic evidence item(s) [EVD-008, EVD-001, EVD-005], the composite risk score is 66.58 of 100 (MODERAT / MODERATE). Recommendation: verify the previously recorded action and confirm its residual-risk effect. This is a deterministic, evidence-anchored computation — not a model-generated opinion.\",\n    \"disclosure\": \"Deterministic simulation (AI (simulasi)); no live model inference.\"\n  },\n  \"proposedActions\": [\n    {\n      \"actionId\": \"RUN-bbac82028096291e-A1\",\n      \"title\": \"Verifikasi tindakan ACT-301 dan konfirmasi dampak residual\",\n      \"ownerRole\": \"TGC Finance Lead (synthetic role)\",\n      \"dueInDays\": 3,\n      \"rationale\": \"Derived from EVD-008 (Prior recorded action ACT-301 assigned to a fictional TGC role; residual 68) and composite score 66.58.\",\n      \"linkedEvidence\": [\n        \"EVD-008\"\n      ],\n      \"allCitedEvidence\": [\n        \"EVD-008\",\n        \"EVD-001\",\n        \"EVD-005\"\n      ],\n      \"status\": \"RECORDED\",\n      \"recorded\": true,\n      \"synthetic\": true\n    },\n    {\n      \"actionId\": \"RUN-bbac82028096291e-A2\",\n      \"title\": \"Jalankan tinjauan ketersediaan air dan kontingensi operasi 14 hari\",\n      \"ownerRole\": \"TGC — Head of Operations (peran fiktif)\",\n      \"dueInDays\": 3,\n      \"rationale\": \"Derived from EVD-001 (Drought index rose from 67.5 to 73.3 at TGC operating area) and composite score 66.58.\",\n      \"linkedEvidence\": [\n        \"EVD-001\"\n      ],\n      \"allCitedEvidence\": [\n        \"EVD-008\",\n        \"EVD-001\",\n        \"EVD-005\"\n      ],\n      \"status\": \"RECORDED\",\n      \"recorded\": true,\n      \"synthetic\": true\n    }\n  ],\n  \"recording\": {\n    \"recorded\": true,\n    \"entries\": 2,\n    \"ledgerPath\": \"/tmp/demo-state8/ledger.json\"\n  },\n  \"approval\": {\n    \"decision\": \"APPROVED\",\n    \"approver\": \"Team BRONX\",\n    \"note\": \"Approved for demo\",\n    \"decidedAt\": \"2026-11-04T05:40:00+08:00\"\n  }\n}\n",
+      "stderr": "",
+      "stdoutSha256": "d3ce29e1c84f409cb7b676f59da2bf1fe99ef8c65c09476047a89eab89d9fb5f"
+    },
+    {
+      "id": "S4",
+      "label": "approve again — double approval blocked",
+      "argv": [
+        "node",
+        "agent/run.js",
+        "approve",
+        "RUN-bbac82028096291e",
+        "Team BRONX",
+        "duplicate",
+        "--state=/tmp/demo-state8",
+        "--now=2026-11-04T05:40:00+08:00"
+      ],
+      "exit": 1,
+      "stdout": "",
+      "stderr": "./agent/approve.js:44\n    throw new Error('APPROVAL_NOT_ALLOWED: run status is ' + run.status);\n    ^\n\nError: APPROVAL_NOT_ALLOWED: run status is RECORDED\n    at approve (./agent/approve.js:44:11)\n    at Object.approveRun [as approve] (./agent/agent.js:98:55)\n    at main (./agent/run.js:180:33)\n    at Object.<anonymous> (./agent/run.js:204:1)\n    at Module._compile (node:internal/modules/cjs/loader:1562:14)\n    at Object..js (node:internal/modules/cjs/loader:1699:10)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\n\nNode.js v22.13.1\n",
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "S5",
+      "label": "ledger — two recorded actions",
+      "argv": [
+        "node",
+        "agent/run.js",
+        "ledger",
+        "--state=/tmp/demo-state8",
+        "--now=2026-11-04T05:40:00+08:00"
+      ],
+      "exit": 0,
+      "stdout": "[\n  {\n    \"runId\": \"RUN-bbac82028096291e\",\n    \"actionId\": \"RUN-bbac82028096291e-A1\",\n    \"title\": \"Verifikasi tindakan ACT-301 dan konfirmasi dampak residual\",\n    \"ownerRole\": \"TGC Finance Lead (synthetic role)\",\n    \"dueInDays\": 3,\n    \"linkedEvidence\": [\n      \"EVD-008\"\n    ],\n    \"question\": \"Apa risiko kekeringan terhadap operasi TGC dan tindakan apa yang harus disetujui?\",\n    \"compositeScore\": 66.58,\n    \"groundedIn\": [\n      \"EVD-008\",\n      \"EVD-001\",\n      \"EVD-005\"\n    ],\n    \"approver\": \"Team BRONX\",\n    \"note\": \"Approved for demo\",\n    \"decidedAt\": \"2026-11-04T05:40:00+08:00\",\n    \"recordedAt\": \"2026-11-04T05:40:00+08:00\",\n    \"synthetic\": true\n  },\n  {\n    \"runId\": \"RUN-bbac82028096291e\",\n    \"actionId\": \"RUN-bbac82028096291e-A2\",\n    \"title\": \"Jalankan tinjauan ketersediaan air dan kontingensi operasi 14 hari\",\n    \"ownerRole\": \"TGC — Head of Operations (peran fiktif)\",\n    \"dueInDays\": 3,\n    \"linkedEvidence\": [\n      \"EVD-001\"\n    ],\n    \"question\": \"Apa risiko kekeringan terhadap operasi TGC dan tindakan apa yang harus disetujui?\",\n    \"compositeScore\": 66.58,\n    \"groundedIn\": [\n      \"EVD-008\",\n      \"EVD-001\",\n      \"EVD-005\"\n    ],\n    \"approver\": \"Team BRONX\",\n    \"note\": \"Approved for demo\",\n    \"decidedAt\": \"2026-11-04T05:40:00+08:00\",\n    \"recordedAt\": \"2026-11-04T05:40:00+08:00\",\n    \"synthetic\": true\n  }\n]\n",
+      "stderr": "",
+      "stdoutSha256": "0f51239a01e1a8178233efbc4e84405c1079dd4bae352e34838b7542cd1d3ea0"
+    }
+  ],
+  "checks": [
+    {
+      "id": "S8-01",
+      "capability": "ask exits 0 and returns AWAITING_HUMAN_APPROVAL",
+      "status": "PASS",
+      "detail": "exit=0 status=AWAITING_HUMAN_APPROVAL"
+    },
+    {
+      "id": "S8-02",
+      "capability": "ask records NOTHING and requires a named human",
+      "status": "PASS",
+      "detail": "humanApprovalRequired=true recorded=false"
+    },
+    {
+      "id": "S8-03",
+      "capability": "two actions PROPOSED as PENDING_HUMAN_APPROVAL (not executed)",
+      "status": "PASS",
+      "detail": "proposed=2 states=PENDING_HUMAN_APPROVAL,PENDING_HUMAN_APPROVAL"
+    },
+    {
+      "id": "S8-04",
+      "capability": "ledger is [] before approval — no write without a human",
+      "status": "PASS",
+      "detail": "exit=0 entries=0"
+    },
+    {
+      "id": "S8-05",
+      "capability": "first approve by a named human -> RECORDED, 2 entries",
+      "status": "PASS",
+      "detail": "exit=0 status=RECORDED entries=2"
+    },
+    {
+      "id": "S8-06",
+      "capability": "second approve is REFUSED (exit 1, APPROVAL_NOT_ALLOWED)",
+      "status": "PASS",
+      "detail": "exit=1 blocked=true"
+    },
+    {
+      "id": "S8-07",
+      "capability": "ledger has exactly 2 entries, each with approver + timestamp + evidence",
+      "status": "PASS",
+      "detail": "exit=0 entries=2"
+    },
+    {
+      "id": "S8-08",
+      "capability": "no live model inference and no platform/billing claim",
+      "status": "PASS",
+      "detail": "liveInference=false wording=AI (simulasi)"
+    }
+  ],
+  "summary": {
+    "total": 8,
+    "pass": 8,
+    "fail": 0,
+    "exitOk": true
+  },
+  "integrity": {
+    "transcriptSha256": "1fd10a7b5ed94b28bd2adfa26c03633f11e7a85b2d2c225bb21b167394637ff6"
+  }
+}

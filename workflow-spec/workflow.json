@@ -1,0 +1,293 @@
+{
+  "schemaVersion": "eewr-workflow-spec-workflow-spec.v1",
+  "genuinePlatformExport": false,
+  "exportType": "EXPORT_FORMAT_SPECIFICATION_NOT_A_PLATFORM_EXPORT",
+  "disclosure": "Portable workflow specification authored in the isolated EEWR Agent Lab. This JSON was NOT exported from a platform account, was NOT run on the platform, and consumed NO credits. It is a specification for the participant to import and verify. 100% synthetic content. Independent project of Team BRONX, XRC.",
+  "product": "EEWR — Executive Early Warning Radar",
+  "subsystem": "Challenge A — Workplace Knowledge Brain (Otak Pengetahuan Kerja)",
+  "team": "BRONX",
+  "organization": "XRC",
+  "representedBy": "Team BRONX",
+  "attribution": "Team BRONX",
+  "positioning": "Executive Knowledge & Early Warning Intelligence",
+  "scenario": "Project History (Riwayat proyek) — CONFIRMED (guide §3)",
+  "scenarioOfficialQuestion": "Mengapa stok terlambat di Makassar, dan apa yang masih terbuka?",
+  "industry": "Natural resource-based industries",
+  "demoEntity": "The Goodlight Company (TGC) — fictional",
+  "data": "100% synthetic participant-owned dataset; the organiser clarification of 2026-11-04 permits participants to use their own dataset, so no organiser-shared dataset is required and no official-dataset result is claimed",
+  "billing": "FREE CREDITS ONLY (guide §9 Langkah 3 / §11, 1,000 per member). No paid billing. No charge incurred in this cycle.",
+  "modelPosture": {
+    "liveInference": false,
+    "verified": false,
+    "enabled": false,
+    "networkCallsPermitted": false,
+    "note": "Model node is OPTIONAL and confined to interpretation/drafting. All control-plane steps are deterministic."
+  },
+  "trustBoundary": {
+    "name": "DETERMINISTIC_CONTROL_PLANE_VS_OPTIONAL_MODEL_SANDBOX",
+    "description": "The model (if enabled) receives ONLY the question and the already-selected, already-filtered, already-cited source snippets. It never sees the permission table, the full corpus, the action tools, or the audit writer.",
+    "modelMay": [
+      "interpret id/en/mixed question",
+      "draft prose strictly from supplied citations"
+    ],
+    "modelMayNever": [
+      "choose or filter sources",
+      "bypass authorisation",
+      "execute/send/schedule/modify/publish",
+      "write the audit log",
+      "see restricted items"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "N1",
+      "name": "Intake",
+      "type": "io",
+      "deterministic": true,
+      "desc": "Accept natural-language question (id/en/mixed) + userId."
+    },
+    {
+      "id": "N2",
+      "name": "PermissionResolve",
+      "type": "guardrail",
+      "deterministic": true,
+      "desc": "Load permission table FRESH each run; resolve principal; unknown user -> least privilege. Lab module access.js."
+    },
+    {
+      "id": "N3",
+      "name": "ScopeBeforeSearch",
+      "type": "guardrail",
+      "deterministic": true,
+      "desc": "Filter corpus by level+topic BEFORE retrieval. Restricted items never enter the searchable set. Lab module access.scopeCorpus."
+    },
+    {
+      "id": "N4",
+      "name": "DeterministicRetrieval",
+      "type": "compute",
+      "deterministic": true,
+      "desc": "tf-idf-style keyword scoring over the permitted slice only, with score breakdown. Lab module retrieve.js."
+    },
+    {
+      "id": "N5",
+      "name": "SafetySanitise",
+      "type": "guardrail",
+      "deterministic": true,
+      "desc": "Treat all document/chat text as DATA: detect+neutralise injected instructions, mask NIK/phone. Lab module safety.js."
+    },
+    {
+      "id": "N6",
+      "name": "ConflictResolution",
+      "type": "compute",
+      "deterministic": true,
+      "desc": "Group by claim key, flag differing values, pick newest / explicit superseding source, keep both cited. Lab module answer.detectConflicts."
+    },
+    {
+      "id": "N7",
+      "name": "OptionalModelDraft",
+      "type": "model_optional",
+      "deterministic": false,
+      "enabled": false,
+      "desc": "OPTIONAL: draft prose from supplied citations ONLY. Disabled and fail-closed until Gates 1-6 pass. Never connected to tools."
+    },
+    {
+      "id": "N8",
+      "name": "AnswerCompose",
+      "type": "compute",
+      "deterministic": true,
+      "desc": "Attach full citations, conflict flags, neutral owner route or refusal, notices, disclosure. Lab module answer.buildAnswer."
+    },
+    {
+      "id": "N9",
+      "name": "HumanApprovalGate",
+      "type": "guardrail",
+      "deterministic": true,
+      "desc": "Read-only brain: zero action execution. Any action requires a named human approval via approve.js on the risk path."
+    },
+    {
+      "id": "N10",
+      "name": "AuditAppend",
+      "type": "storage",
+      "deterministic": true,
+      "desc": "Append-only log of question, sources retrieved, answer returned, decisions, refusals, injections, masking. Lab module audit.js."
+    }
+  ],
+  "edges": [
+    [
+      "N1",
+      "N2"
+    ],
+    [
+      "N2",
+      "N3"
+    ],
+    [
+      "N3",
+      "N4"
+    ],
+    [
+      "N4",
+      "N5"
+    ],
+    [
+      "N5",
+      "N6"
+    ],
+    [
+      "N6",
+      "N7"
+    ],
+    [
+      "N7",
+      "N8",
+      "guard:DeterministicOutputGuard"
+    ],
+    [
+      "N6",
+      "N8"
+    ],
+    [
+      "N8",
+      "N9"
+    ],
+    [
+      "N8",
+      "N10"
+    ],
+    [
+      "N9",
+      "N10"
+    ]
+  ],
+  "criticalEdgesNeverAllowed": [
+    "N7 -> N9 (model must never reach the approval/action gate)",
+    "N7 -> N10 (model must never write the audit log)",
+    "N1 -> N4 (search must never precede authorisation)",
+    "N4 -> N9 (retrieval must never execute an action)"
+  ],
+  "designTradeoffs": [
+    {
+      "choice": "Deterministic control plane over a model-driven agent",
+      "why": "Guide §10 evaluators responsible-AI practice, not production engineering; §6 caps the ethics score at 5/10 for leaks or unapproved actions. Determinism makes the safety properties provable and testable offline.",
+      "enforcedBy": "agent/output-guard.js answer-branch grounding check (selftest-guard G-T07/G-T08)"
+    },
+    {
+      "choice": "Same neutral answer for restricted and non-existent topics",
+      "why": "Official Uji 1 explicitly forbids confirming that restricted content exists. Costs a little helpfulness, prevents a critical failure.",
+      "enforcedBy": "agent/output-guard.js (REFUSAL_BRANCH) + agent/safety.js UNKNOWN_ANSWER template; verified by selftest-guard G-T03/G-T05"
+    },
+    {
+      "choice": "Keep both conflicting sources cited",
+      "why": "Official Uji 2 requires Rp750.000 AND both sources AND the SOP marked stale; hiding the loser would fail the test."
+    },
+    {
+      "choice": "Model confined to drafting",
+      "why": "Preserves the accountable architecture; a model can never grant itself access or execute an action."
+    },
+    {
+      "choice": "Fresh permission reload per query",
+      "why": "§3 requires the next answer to follow an access change; caching would violate it."
+    }
+  ],
+  "acceptanceGates": {
+    "note": "All 6 must pass in a real platform session before any 'verified' wording is used.",
+    "gates": [
+      "G1: platform account created with FREE credits; no paid billing enabled",
+      "G2: Participant-owned 100% synthetic dataset loaded as the knowledge source (organiser clarification 2026-11-04; no organiser-shared dataset required)",
+      "G3: One real agent/workflow run produces a captured response (timestamp, request, response)",
+      "G4: Console screenshot captured (also serves S8/S9 evidence)",
+      "G5: Saved platform artifact (Save As) + library entry evidence; NO native workflow export exists (Route B retired)",
+      "G6: Deterministic pipeline remains the fallback; fail-closed adapter stays disabled unless G1-G5 verified"
+    ],
+    "status": "NOT_RUN_BLOCKED_ON_OWNER_ACCOUNT_ONLY"
+  },
+  "localEquivalentVerification": {
+    "command": "node agent/run.js selftest-a",
+    "result": "23/23 PASS, 0 FAIL, exit 0",
+    "officialUji1": "PASS (restricted == non-existent, no existence leak)",
+    "officialUji2": "PASS (Rp750.000, both sources, SOP flagged stale)",
+    "regression": "node agent/run.js selftest -> 20/20 PASS, exit 0",
+    "outputGuard": "node agent/run.js selftest-guard -> 15/15 PASS, exit 0",
+    "finalPositioning": "node agent/run.js verify-final -> 16/16 PASS, exit 0",
+    "approvalGate": "node agent/run.js verify-shot8 -> 8/8 PASS, exit 0"
+  },
+  "shot8ApprovalGateVerification": {
+    "command": "node agent/run.js verify-shot8",
+    "harness": "tests/verify-shot8.js",
+    "evidence": "traces/shot8-approval-gate-2026-11-04.json",
+    "result": "8/8 PASS, 0 FAIL, exit 0",
+    "covers": [
+      "ask returns AWAITING_HUMAN_APPROVAL and records nothing (recorded=false, entries=0)",
+      "two actions PROPOSED as PENDING_HUMAN_APPROVAL, never executed",
+      "ledger is [] before any approval",
+      "approve() by a NAMED human is the only write point -> RECORDED, entries=2",
+      "a second approve() of the same run is REFUSED (exit 1, APPROVAL_NOT_ALLOWED)",
+      "each recorded entry carries approver + recordedAt + linkedEvidence",
+      "no live model inference and no platform/billing claim (liveInference=false, AI (simulasi))"
+    ],
+    "figure": "Not bundled in this repository; the machine-readable trace below is the source of truth",
+    "machineReadableEvidence": "traces/shot8-approval-gate-2026-11-04.json",
+    "note": "Covers the mandatory S7 'waits for approval' shot. Re-runnable offline; 0 credits, 0 credentials, 0 network calls.",
+    "platformStatus": "NOT a host-platform run and NOT a console screenshot — the gate itself is verified locally; platform-side capture remains G3-G5."
+  },
+  "modelAssistedWorkflowVerification": {
+    "command": "node agent/run.js verify-model-assisted",
+    "harness": "tests/verify-model-assisted-workflow.js",
+    "interpreter": "agent/model-interpreter.js (fail-closed N7 adapter)",
+    "orchestrator": "agent/model-assisted-workflow.js (six-stage pipeline)",
+    "drafts": "traces/model-assisted-drafts-2026-11-04.json (6 genuine captured model outputs, SHA-256 verified)",
+    "evidence": "traces/model-assisted-workflow-2026-11-04.json + traces/model-assisted-workflow-evidence-2026-11-04.json",
+    "result": "26/26 PASS, 0 FAIL, exit 0",
+    "sixStagePipeline": [
+      "USER_QUESTION",
+      "PERMISSION_CHECK",
+      "AUTHORISED_RETRIEVAL",
+      "REAL_MODEL_INTERPRETATION",
+      "GROUNDED_ANSWER_WITH_CITATIONS",
+      "AUDIT_LOG"
+    ],
+    "covers": [
+      "A1 id/en/mixed answered with cited sources",
+      "A2 authorisation BEFORE search; permitted data only; access-change reactivity",
+      "A3 restricted refusal without existence hint; PERSIS SAMA byte-identical",
+      "A4 conflicting sources flagged; Rp750.000 selected; old SOP marked usang",
+      "A5 'Saya tidak tahu' + neutral information-owner route",
+      "A6 every question, retrieved sources and returned answer logged (append-only)",
+      "F-01 genuine model refusal drift reproduced and DISCARDED by the deterministic guard",
+      "fabricated Rp1.250.000 draft REJECTED; disabled-model fallback stays deterministic",
+      "read-only, 100% synthetic, 0 network calls, 0 charges, 0 credentials"
+    ],
+    "modelInterface": "AUTHORIZED_SESSION_NATIVE_MODEL_INTERFACE - genuine model interpretation captured via the session subagent channel and consumed OFFLINE as an UNTRUSTED, hash-checked input to the N7->N8 guard.",
+    "claimBoundary": "Model-ASSISTED, NOT verified live AI. The EEWR Node process performs NO live model call. The in-app live SDK path was probed and is BLOCKED (the in-app SDK probe EXIT=124 / 0 bytes; no local weights; no model API credential or endpoint). It is NOT proof that the host platform chat model is integrated into EEWR, NOT a host-platform run, NOT a console screenshot, NOT an exported workflow, and NOT an organiser-shared-dataset result. No paid billing is enabled and no credit is consumed.",
+    "platformStatus": "G1-G6 NOT RUN from this workspace. Gates G1-G6 remain owner-side actions. The organiser clarification of 2026-11-04 CLOSED the shared-dataset gate: participants may use their own dataset, so the participant-owned 100% synthetic corpus is the permitted knowledge source and no organiser-shared dataset is required."
+  },
+  "finalPositioningVerification": {
+    "command": "node agent/run.js verify-final",
+    "harness": "tests/verify-final.js",
+    "evidence": "traces/final-positioning-verification-2026-11-04.json",
+    "result": "16/16 PASS, 0 FAIL, exit 0",
+    "covers": [
+      "Project History scenario with the official §3 question",
+      "permission-aware retrieval (authorise-before-search, hidden topic, authorised executive)",
+      "Uji 1 PERSIS SAMA refusal / Uji 2 conflict with stale marking",
+      "genuine session-native model drafts accepted only after evidence-grounding check",
+      "fabrication tripwire rejects an unauthorised figure",
+      "real drifted model refusals discarded -> byte-identical deterministic template",
+      "injection neutralisation, PII masking, owner routing, full append-only audit",
+      "read-only gate, fail-closed provider, deterministic reproducibility"
+    ],
+    "genuineModelDrafts": "traces/genuine-model-drafts-2026-11-04.json (2 real session-native model drafts, NOT a host-platform run)",
+    "platformStatus": "G1-G6 NOT RUN — owner account access required; no organiser-shared dataset dependency"
+  },
+  "deterministicOutputGuard": {
+    "module": "agent/output-guard.js",
+    "selfTest": "tests/selftest-guard.js (15 assertions, independent of selftest-a)",
+    "cli": "node agent/run.js selftest-guard  |  node agent/run.js guard-demo \"<question>\" --user=<id>",
+    "position": "N7 -> N8",
+    "ruleRefusalBranch": "If the upstream control plane returned no permitted source, ANY model draft is discarded and the single shared UNKNOWN_ANSWER template is emitted. The model never owns the refusal text, so a restricted topic and a non-existent topic are byte-identical (official Uji 1: PERSIS SAMA).",
+    "ruleAnswerBranch": "A model draft may be used only if every figure it mentions already exists in the authorised citations it was given. Otherwise the draft is rejected and the deterministic cited answer is used.",
+    "empiricalBasis": "Finding F-01 in traces/native-model-execution-2026-11-04.json: two REAL model refusals for a restricted and a non-existent topic differed in wording under identical upstream state. Guarded, they become byte-identical.",
+    "deterministic": true,
+    "networkCallsPermitted": false,
+    "note": "Guards the optional model node without changing the deterministic control plane. Node and edge counts are unchanged (10 nodes, 11 edges)."
+  }
+}

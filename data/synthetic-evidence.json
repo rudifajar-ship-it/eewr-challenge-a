@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "eewr-agent-evidence.v1",
+  "disclosure": "100% synthetic evidence corpus for the fictional The Goodlight Company (TGC). Not real-world data. Independent project of Team BRONX, XRC.",
+  "synthetic": true,
+  "items": [
+    {
+      "id": "EVD-001",
+      "date": "2026-10-28",
+      "category": "climate-operations",
+      "title": "Drought index rose from 67.5 to 73.3 at TGC operating area",
+      "tags": ["kekeringan", "drought", "operasi", "operations", "TGC", "SIG-8801", "EWR-1042"],
+      "body": "Synthetic signal SIG-8801 and early-warning EWR-1042 record a rising drought index from 67.5 to 73.3. Water availability for processing is projected to tighten. This is simulated monitoring data for TGC, not a real measurement.",
+      "metrics": { "p": 72, "i": 80, "u": 70 },
+      "source": "Synthetic dataset — EEWR demo, signal SIG-8801 / alert EWR-1042"
+    },
+    {
+      "id": "EVD-002",
+      "date": "2026-10-29",
+      "category": "risk-portfolio",
+      "title": "22 active alerts, 4 rated critical, across 26 monitored signals",
+      "tags": ["risiko", "risk", "alert", "peringatan", "critical", "portfolio", "TGC"],
+      "body": "The synthetic portfolio contains 22 active alerts of which 4 are critical, derived from 26 monitored signals. The aggregate risk score is 86 of 100 and the residual score after mitigation is 68.",
+      "metrics": { "p": 70, "i": 85, "u": 78 },
+      "source": "Synthetic dataset — EEWR demo, Executive Dashboard aggregate"
+    },
+    {
+      "id": "EVD-003",
+      "date": "2026-10-25",
+      "category": "supply",
+      "title": "Vendor lead time widened for a key processing input",
+      "tags": ["supply", "vendor", "pasokan", "lead time", "procurement", "TGC"],
+      "body": "Synthetic procurement telemetry shows a lengthening vendor lead time for one processing input. No real supplier is named or implied.",
+      "metrics": { "p": 65, "i": 70, "u": 55 },
+      "source": "Synthetic dataset — EEWR demo, supply signals"
+    },
+    {
+      "id": "EVD-004",
+      "date": "2026-10-22",
+      "category": "compliance",
+      "title": "Permit documentation review scheduled in the synthetic compliance calendar",
+      "tags": ["compliance", "kepatuhan", "permit", "audit", "dokumen", "TGC"],
+      "body": "A synthetic compliance calendar lists a documentation review. All references are illustrative; no real regulator, permit or institution is represented.",
+      "metrics": { "p": 45, "i": 88, "u": 40 },
+      "source": "Synthetic dataset — EEWR demo, compliance signals"
+    },
+    {
+      "id": "EVD-005",
+      "date": "2026-10-27",
+      "category": "logistics",
+      "title": "River transport reliability declined in the synthetic logistics feed",
+      "tags": ["logistics", "logistik", "transport", "river", "pengiriman", "operasi", "TGC"],
+      "body": "Simulated logistics telemetry shows reduced river transport reliability, which can compound climate-related operating constraints.",
+      "metrics": { "p": 68, "i": 72, "u": 66 },
+      "source": "Synthetic dataset — EEWR demo, logistics signals"
+    },
+    {
+      "id": "EVD-006",
+      "date": "2026-10-24",
+      "category": "finance",
+      "title": "Synthetic cost exposure increased with mitigation spend",
+      "tags": ["finance", "biaya", "cost", "exposure", "anggaran", "TGC"],
+      "body": "Simulated financial telemetry associates mitigation activity with higher short-term cost exposure. Figures are illustrative only.",
+      "metrics": { "p": 55, "i": 75, "u": 50 },
+      "source": "Synthetic dataset — EEWR demo, finance signals"
+    },
+    {
+      "id": "EVD-007",
+      "date": "2026-10-20",
+      "category": "stakeholder",
+      "title": "Community grievance count rose in the synthetic stakeholder log",
+      "tags": ["stakeholder", "masyarakat", "grievance", "reputation", "komunikasi", "TGC"],
+      "body": "A simulated stakeholder log records an increase in grievance count. No real community, individual or location is represented.",
+      "metrics": { "p": 40, "i": 60, "u": 45 },
+      "source": "Synthetic dataset — EEWR demo, stakeholder signals"
+    },
+    {
+      "id": "EVD-008",
+      "date": "2026-10-30",
+      "category": "action-history",
+      "title": "Prior recorded action ACT-301 assigned to a fictional TGC role; residual 68",
+      "tags": ["tindakan", "action", "ACT-301", "approval", "persetujuan", "disetujui", "residual", "TGC"],
+      "body": "The synthetic action register contains 27 actions. ACT-301 was assigned to a synthetic TGC role. Residual risk after mitigation is 68. Actions are stored locally in the browser only, not across devices.",
+      "metrics": { "p": 50, "i": 65, "u": 58 },
+      "source": "Synthetic dataset — EEWR demo, Executive Action Tracker"
+    }
+  ]
+}

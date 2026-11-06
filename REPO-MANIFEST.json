@@ -1,0 +1,259 @@
+{
+  "schemaVersion": "eewr-s9-public-repo-manifest.v1",
+  "product": "EEWR — Executive Early Warning Radar",
+  "challenge": "Challenge A — Workplace Knowledge Brain",
+  "team": "Team BRONX",
+  "organization": "XRC",
+  "demoEntity": "The Goodlight Company (TGC) — fictional / 100% synthetic",
+  "route": "S9 Route A — public source repository",
+  "publicationStatus": "NOT PUBLISHED — owner approval required",
+  "generatedAtUtc": "2026-11-05T21:15:47Z",
+  "selfExcluded": "REPO-MANIFEST.json is not hashed (self-reference); state/ is excluded runtime output",
+  "totals": {
+    "files": 48,
+    "bytes": 411591,
+    "verification": "7 suites / 117 assertions / all exit 0"
+  },
+  "files": {
+    ".gitignore": {
+      "sha256": "e5d10164fc57d725e6d995fb56ee966663bc1f740d9227713e5ba2f9a059c1bf",
+      "bytes": 284,
+      "lines": 20
+    },
+    "ARCHITECTURE.md": {
+      "sha256": "f96d656dee0d9f042cf1726313dd83e718c104e6f701d7cd46af734e315779e9",
+      "bytes": 7471,
+      "lines": 120
+    },
+    "DEPLOYMENT.md": {
+      "sha256": "1deb810795633cecb11d729105d137228eda09f7f704e9f178bcbd0cc502732e",
+      "bytes": 4053,
+      "lines": 98
+    },
+    "README.md": {
+      "sha256": "e9dab76d6a3dc90746ab75f5b00400f02fc0261968e4f6772c726462a0bd9392",
+      "bytes": 6601,
+      "lines": 131
+    },
+    "REPO-README.md": {
+      "sha256": "ecbc8a174fd4c670771103880763f26b3904c3c1646da75fc99e6b0f25d7352b",
+      "bytes": 3444,
+      "lines": 73
+    },
+    "SECURITY.md": {
+      "sha256": "cc784f437fc669654f011866830b48b105ab1645316adcc1194f6d0c4733f047",
+      "bytes": 3863,
+      "lines": 68
+    },
+    "agent/access.js": {
+      "sha256": "0fcec9660d9e18766ed160fc23385610c89696e82811e46adfa3275345a5670a",
+      "bytes": 3040,
+      "lines": 75
+    },
+    "agent/agent.js": {
+      "sha256": "546b83e3e17f188268aee4de3603496a3eb550e8ee3ed7413dc8b4293ba0ef5a",
+      "bytes": 4074,
+      "lines": 113
+    },
+    "agent/answer.js": {
+      "sha256": "74f6c5794e2564331b7641292addd0227eb49f5bf982b883d00700862972b098",
+      "bytes": 8974,
+      "lines": 201
+    },
+    "agent/approve.js": {
+      "sha256": "023205315f34360070c335d4d0262858488cbbb6da5225b94c3c0466822aaf84",
+      "bytes": 3590,
+      "lines": 98
+    },
+    "agent/audit.js": {
+      "sha256": "c247753078af2f98d4bc06fd8e132c337c9a5fb157f95d01b21a04621ed1cb50",
+      "bytes": 4146,
+      "lines": 105
+    },
+    "agent/compose.js": {
+      "sha256": "5e076b21f0879f47fd1be76c5051958ca7eddb79acff1b3a997123dc1e463c0f",
+      "bytes": 3247,
+      "lines": 85
+    },
+    "agent/evidence.js": {
+      "sha256": "8f44dae5b2db4edf63b1addec14e7ec5fc3a02a1710b493170e1fe7a48a13244",
+      "bytes": 1239,
+      "lines": 32
+    },
+    "agent/knowledge.js": {
+      "sha256": "4cf94c712769f4e7d002571c98d7932bb54a4b67bcbefb3e0d178acee747dba0",
+      "bytes": 9095,
+      "lines": 216
+    },
+    "agent/model-assisted-workflow.js": {
+      "sha256": "b81b24e906ff9eb1768935042b1b0cf88e50959ae77d54e7a889b5b801e2f900",
+      "bytes": 9022,
+      "lines": 188
+    },
+    "agent/model-interpreter.js": {
+      "sha256": "170dc349492fae1e3891718d6af3681d3796e068b8c9ac91e45b3b98a8b2250a",
+      "bytes": 8029,
+      "lines": 171
+    },
+    "agent/output-guard.js": {
+      "sha256": "5b6165f7c3cde074241b2e007d943bda64429e969a285d56519d5dc59b768a09",
+      "bytes": 7482,
+      "lines": 198
+    },
+    "agent/propose.js": {
+      "sha256": "f79463241f96a6ccd5f9b86e8e0d4e2dc4006a2acdcc4d8837ecaa788629642c",
+      "bytes": 2603,
+      "lines": 76
+    },
+    "agent/provider-adapter.js": {
+      "sha256": "9f7b3d6ffe1c25631c7cc71e209d25e50ca941da2db0d1bf245ee1216035d564",
+      "bytes": 1902,
+      "lines": 43
+    },
+    "agent/retrieve.js": {
+      "sha256": "78bd5f7fcbc64703e301917ebe3330f24b4f774912bfad675892d10b722afe41",
+      "bytes": 2968,
+      "lines": 94
+    },
+    "agent/run.js": {
+      "sha256": "582c04cbef6949de332efff5ed12793cc5dcdf1f9307b9d2b83e4dd7684fc606",
+      "bytes": 9624,
+      "lines": 204
+    },
+    "agent/safety.js": {
+      "sha256": "61e201cf19c67def1092d88d843fef2421133dbd830b30c11565f95849103840",
+      "bytes": 3351,
+      "lines": 72
+    },
+    "data/knowledge-corpus.json": {
+      "sha256": "053c13eb45ffaa5545056bf45cc8c8b33c07d3416c9083c6be78eca7a12ce72e",
+      "bytes": 8244,
+      "lines": 154
+    },
+    "data/permission-table.json": {
+      "sha256": "fbe83302209f835c65b9f41d8e766d43bff4682f194af3dee84535fd36571b38",
+      "bytes": 1816,
+      "lines": 45
+    },
+    "data/synthetic-evidence.json": {
+      "sha256": "11391925796ae6247ba001cf9742f9b8d9524cbee13efea66a0acaf000653a66",
+      "bytes": 4801,
+      "lines": 87
+    },
+    "demo/RUNBOOK.md": {
+      "sha256": "78601f3be9eaf986c62f88a2d6f4a732c7475beb6ad42c9cd4d58f46371bce35",
+      "bytes": 16068,
+      "lines": 200
+    },
+    "tests/genuine-e2e-demo.js": {
+      "sha256": "c7d2b70c724c094e11080adb8c600502237af3f59f0e3fb1d87c1aef07e3dadc",
+      "bytes": 11334,
+      "lines": 212
+    },
+    "tests/selftest-a.js": {
+      "sha256": "c2fc966b071336be6b3da03352c932d6cd3631d89807a2d56e5b59e8788280f4",
+      "bytes": 20097,
+      "lines": 404
+    },
+    "tests/selftest-guard.js": {
+      "sha256": "ac4391e67a81adda8358be17fac4b5a3288b60718f09f6dcd06c862462b23665",
+      "bytes": 11809,
+      "lines": 251
+    },
+    "tests/selftest.js": {
+      "sha256": "b8e66136b781d05b0bc2812c16c711b1aa7e629be3b6c0d4b90688362bf8bbea",
+      "bytes": 10920,
+      "lines": 261
+    },
+    "tests/verify-final.js": {
+      "sha256": "27129971c4acc75139a58fcdf5d75c6e07b1cefdcb47acea11b58dc7ec2ce454",
+      "bytes": 19006,
+      "lines": 332
+    },
+    "tests/verify-model-assisted-workflow.js": {
+      "sha256": "cc6027a42d482ee76bd50b689d43c12a4d9f7273564448ff6135696477ffca74",
+      "bytes": 24328,
+      "lines": 387
+    },
+    "tests/verify-shot8.js": {
+      "sha256": "bdfe960822b319e0978ebdc790e93a72c6242554a911b1520b139ee1d1d35874",
+      "bytes": 10228,
+      "lines": 195
+    },
+    "traces/f01-output-guard-fix-evidence.json": {
+      "sha256": "f9089edc684e5f96c4d8017d53e8100a80edb7f01b0222365c4cb83decd34700",
+      "bytes": 5429,
+      "lines": 104
+    },
+    "traces/final-positioning-verification-2026-11-04.json": {
+      "sha256": "87968178eb799a067632c0bbb42907ce56aa4fce218ca978fa88a5a79b1eeb26",
+      "bytes": 9569,
+      "lines": 226
+    },
+    "traces/genuine-e2e-synthetic-drafts-2026-11-04.json": {
+      "sha256": "0026416dc90047ef16b59c6ceee5b2f7a01a8b3b41260e0bd694d0df0b19719c",
+      "bytes": 4140,
+      "lines": 75
+    },
+    "traces/genuine-e2e-synthetic-evidence-2026-11-04.json": {
+      "sha256": "2b9f3eee0e2b44a31e46fa4a470ec304161a3b4b3cd7233ef38d86b7999f1de5",
+      "bytes": 10494,
+      "lines": 215
+    },
+    "traces/genuine-model-drafts-2026-11-04.json": {
+      "sha256": "d3d1ec8871bd13822ed30b753f47ada67b6a3a61eba3561c340fcd92655a1684",
+      "bytes": 3733,
+      "lines": 42
+    },
+    "traces/model-assisted-drafts-2026-11-04.json": {
+      "sha256": "73ee58cda93dbff393f122bd2e7024b617e82b5c57e4a6d18823a86868ffc79c",
+      "bytes": 7929,
+      "lines": 125
+    },
+    "traces/model-assisted-workflow-2026-11-04.json": {
+      "sha256": "82c99cde98ebb6aed716a16e7530501a4234a65e5b733c0834e1cb326378115c",
+      "bytes": 17175,
+      "lines": 517
+    },
+    "traces/model-assisted-workflow-evidence-2026-11-04.json": {
+      "sha256": "1b6948beb6d89f4c77380aa18d0394f7eb5c2c7663563a036ae25b571bfc8a24",
+      "bytes": 17760,
+      "lines": 530
+    },
+    "traces/native-model-execution-2026-11-04.json": {
+      "sha256": "6603f07e27c4e96035e27c3bbd21322ebcb450f16b32b45d2c6f5220f7e0c5e9",
+      "bytes": 10293,
+      "lines": 134
+    },
+    "traces/sample-run-a.json": {
+      "sha256": "9d629b5417e37f510474b1fc18a60d02ab65824346e3b369c8698f2552e481ab",
+      "bytes": 4691,
+      "lines": 117
+    },
+    "traces/sample-run.json": {
+      "sha256": "99c73cc92ad7ba806bf83efdb6c3e6e29f5069b412e2132eb4563086110e83ca",
+      "bytes": 19835,
+      "lines": 558
+    },
+    "traces/shot8-approval-gate-2026-11-04.json": {
+      "sha256": "e657b78ee15f3df9b8a39b23c199cac12a8d51f8b78fbb4b9099cfb7aa0e7d8b",
+      "bytes": 25793,
+      "lines": 160
+    },
+    "workflow-spec/IMPORT-AND-VERIFY-RUNBOOK.md": {
+      "sha256": "d67083e9807e2fbbdf603e6780e07d7553842fd3409585520f1064a33b9665b6",
+      "bytes": 6800,
+      "lines": 122
+    },
+    "workflow-spec/agent-role-prompt.md": {
+      "sha256": "02b74aded0a37753fd8644ff0911881100eb73231ad228852592f1bac63180d4",
+      "bytes": 6447,
+      "lines": 124
+    },
+    "workflow-spec/workflow.json": {
+      "sha256": "40168fde8860d94e8a6016541c0af6c625213e0c46280e53840f7f548b0c6a07",
+      "bytes": 14750,
+      "lines": 293
+    }
+  }
+}

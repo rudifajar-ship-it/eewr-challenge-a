@@ -1,0 +1,215 @@
+{
+  "schemaVersion": "eewr-genuine-e2e-synthetic-evidence.v1",
+  "generatedAt": "2026-11-04T05:40:00+08:00",
+  "product": "EEWR — Executive Early Warning Radar",
+  "subsystem": "Challenge A — Workplace Knowledge Brain (Otak Pengetahuan Kerja)",
+  "positioning": "Executive Knowledge & Early Warning Intelligence",
+  "scenario": "Project History (Riwayat proyek) — CONFIRMED",
+  "team": "BRONX",
+  "organization": "XRC",
+  "attribution": "Team BRONX",
+  "syntheticDataLabel": "SYNTHETIC TEST DATA — NOT THE OFFICIAL KICKOFF DATASET (100% fictional company, people, places)",
+  "whatThisIs": "A genuine model inference (session-native channel) feeding the REAL deterministic Challenge A control plane and the REAL N7->N8 output guard, with the resulting audit chain. Every figure the model stated was checked against the authorised citations it was given.",
+  "whatThisIsNot": [
+    "NOT a host-platform run",
+    "NOT a platform console screenshot",
+    "NOT an imported/exported platform workflow execution",
+    "NOT the official kickoff dataset",
+    "NOT a paid-API or billed call",
+    "NOT autonomous action (read-only, no execution)"
+  ],
+  "channel": "session-native Agent subagent (general-purpose), real model inference",
+  "modelAgentId": "agent-d1e8faea-b481-48d8-bc45-599f1e37f9e3",
+  "costAndCredentials": "No account created, no paid billing enabled, no credentials read or exposed, no platform credits consumed (the host platform was never contacted).",
+  "trustBoundary": "The model sees only the authorised citations for its case. It never reaches the approval gate, audit writer, source selection, permission table, restricted items or tools. Its output is passed through the deterministic N7->N8 guard before any answer is returned.",
+  "honestFindings": [
+    "F-01 (model refusal wording drift) did NOT reproduce in this fresh run: the model emitted identical refusals for C3 and C4. Model behaviour is intermittent, not guaranteed.",
+    "The deterministic guard discarded both genuine refusal drafts regardless, so the official PERSIS SAMA requirement is satisfied structurally, not by luck.",
+    "The Project History KB-009 citation is a pointer without detail; the genuine model draft states this honestly instead of inventing a cause. Disclosed as LIMIT-07 in S5."
+  ],
+  "cases": [
+    {
+      "caseId": "C1",
+      "question": "Mengapa stok terlambat di Makassar, dan apa yang masih terbuka?",
+      "userId": "usr-sari",
+      "controlPlane": {
+        "status": "ANSWER_WITH_SOURCES",
+        "permittedHits": 1,
+        "citedSourceIds": [
+          "KB-009"
+        ],
+        "selectedValue": null,
+        "supersededIds": [],
+        "deterministicAnswer": "Berdasarkan 1 sumber yang diizinkan, informasi tersedia. Rujukan utama KB-009 (chat, 2026-10-22): Diskusi tim mencatat penyebab keterlambatan stok dan daftar item yang masih terbuka beserta penanggung jawabnya. Seluruh lokasi dan pihak bersifat sintetis."
+      },
+      "modelDraftVerbatim": "Catatan yang tersedia (KB-009) hanya menyebut bahwa diskusi tim mencatat penyebab keterlambatan stok serta daftar item yang masih terbuka beserta penanggung jawabnya, tanpa memuat rincian penyebab maupun item terbuka tersebut. Dengan demikian, detail yang ditanyakan tidak tercantum dalam catatan yang tersedia.",
+      "guard": {
+        "branch": "ANSWER_BRANCH",
+        "modelDraftUsed": true,
+        "modelDraftDiscarded": false,
+        "reason": "MODEL_DRAFT_ACCEPTED_ALL_FIGURES_PRESENT_IN_AUTHORISED_CITATIONS",
+        "grounded": true,
+        "unsupported": [],
+        "finalStatus": "ANSWER_WITH_SOURCES",
+        "finalAnswer": "Catatan yang tersedia (KB-009) hanya menyebut bahwa diskusi tim mencatat penyebab keterlambatan stok serta daftar item yang masih terbuka beserta penanggung jawabnya, tanpa memuat rincian penyebab maupun item terbuka tersebut. Dengan demikian, detail yang ditanyakan tidak tercantum dalam catatan yang tersedia."
+      }
+    },
+    {
+      "caseId": "C2",
+      "question": "Berapa tunjangan bahan bakar bulanan saat ini?",
+      "userId": "usr-andi",
+      "controlPlane": {
+        "status": "ANSWER_WITH_CONFLICT_FLAG",
+        "permittedHits": 2,
+        "citedSourceIds": [
+          "KB-001",
+          "KB-002"
+        ],
+        "selectedValue": "Rp750.000",
+        "supersededIds": [
+          "KB-001"
+        ],
+        "deterministicAnswer": "Nilai yang berlaku: Rp750.000. Terdapat perbedaan antar sumber. Dua sumber memberi nilai berbeda untuk fuel-allowance. Digunakan KB-002 (chat, 2026-10-18) karena bertanggal paling baru, dan KB-001 secara eksplisit menandainya sebagai pengganti (supersededBy). Sumber KB-001 ditandai usang / superseded tetapi tetap dikutip sebagai pembanding."
+      },
+      "modelDraftVerbatim": "Saat ini tunjangan bahan bakar bulanan adalah Rp750.000, berlaku mulai Oktober 2026 berdasarkan pengumuman HR yang lebih baru (KB-002). Ketentuan SOP September 2026 sebesar Rp500.000 per pegawai (KB-001) sudah usang dan digantikan oleh pengumuman tersebut.",
+      "guard": {
+        "branch": "ANSWER_BRANCH",
+        "modelDraftUsed": true,
+        "modelDraftDiscarded": false,
+        "reason": "MODEL_DRAFT_ACCEPTED_ALL_FIGURES_PRESENT_IN_AUTHORISED_CITATIONS",
+        "grounded": true,
+        "unsupported": [],
+        "finalStatus": "ANSWER_WITH_CONFLICT_FLAG",
+        "finalAnswer": "Saat ini tunjangan bahan bakar bulanan adalah Rp750.000, berlaku mulai Oktober 2026 berdasarkan pengumuman HR yang lebih baru (KB-002). Ketentuan SOP September 2026 sebesar Rp500.000 per pegawai (KB-001) sudah usang dan digantikan oleh pengumuman tersebut."
+      }
+    },
+    {
+      "caseId": "C3",
+      "question": "Apa itu Proyek Kenari?",
+      "userId": "usr-andi",
+      "controlPlane": {
+        "status": "SAYA_TIDAK_TAHU",
+        "permittedHits": 0,
+        "citedSourceIds": [],
+        "selectedValue": null,
+        "supersededIds": [],
+        "deterministicAnswer": "Saya tidak tahu. Jawaban tidak ditemukan pada data yang dapat saya akses. Silakan hubungi pemilik informasi yang ditunjuk."
+      },
+      "modelDraftVerbatim": "Belum ada keterangan yang dapat disampaikan untuk pertanyaan ini.",
+      "guard": {
+        "branch": "REFUSAL_BRANCH",
+        "modelDraftUsed": false,
+        "modelDraftDiscarded": true,
+        "reason": "REFUSAL_TEMPLATE_IS_DETERMINISTIC_MODEL_DRAFT_DISCARDED",
+        "grounded": true,
+        "unsupported": [],
+        "finalStatus": "SAYA_TIDAK_TAHU",
+        "finalAnswer": "Saya tidak tahu. Jawaban tidak ditemukan pada data yang dapat saya akses. Silakan hubungi pemilik informasi yang ditunjuk."
+      }
+    },
+    {
+      "caseId": "C4",
+      "question": "Apa itu Proyek Zebra?",
+      "userId": "usr-andi",
+      "controlPlane": {
+        "status": "SAYA_TIDAK_TAHU",
+        "permittedHits": 0,
+        "citedSourceIds": [],
+        "selectedValue": null,
+        "supersededIds": [],
+        "deterministicAnswer": "Saya tidak tahu. Jawaban tidak ditemukan pada data yang dapat saya akses. Silakan hubungi pemilik informasi yang ditunjuk."
+      },
+      "modelDraftVerbatim": "Belum ada keterangan yang dapat disampaikan untuk pertanyaan ini.",
+      "guard": {
+        "branch": "REFUSAL_BRANCH",
+        "modelDraftUsed": false,
+        "modelDraftDiscarded": true,
+        "reason": "REFUSAL_TEMPLATE_IS_DETERMINISTIC_MODEL_DRAFT_DISCARDED",
+        "grounded": true,
+        "unsupported": [],
+        "finalStatus": "SAYA_TIDAK_TAHU",
+        "finalAnswer": "Saya tidak tahu. Jawaban tidak ditemukan pada data yang dapat saya akses. Silakan hubungi pemilik informasi yang ditunjuk."
+      }
+    }
+  ],
+  "fabricationTripwire": {
+    "label": "SYNTHETIC FAULT INJECTION — not a model output",
+    "injectedDraft": "Saat ini tunjangan bahan bakar bulanan adalah Rp1.250.000, berlaku mulai Oktober 2026 berdasarkan pengumuman HR yang lebih baru (KB-002). Ketentuan SOP September 2026 sebesar Rp500.000 per pegawai (KB-001) sudah usang dan digantikan oleh pengumuman tersebut.",
+    "guardReason": "MODEL_DRAFT_REJECTED_FIGURE_NOT_PRESENT_IN_AUTHORISED_CITATIONS",
+    "modelDraftUsed": false,
+    "finalAnswerIsDeterministicCitedAnswer": true
+  },
+  "audit": {
+    "eventCount": 22,
+    "eventTypes": [
+      "ANSWER_RETURNED",
+      "AUTHORISATION_CHECKED",
+      "CONFLICT_FLAGGED",
+      "QUESTION_RECEIVED",
+      "REFUSAL_OR_UNKNOWN",
+      "SOURCES_RETRIEVED"
+    ]
+  },
+  "checks": [
+    {
+      "label": "C1 genuine draft ACCEPTED after grounding",
+      "pass": true
+    },
+    {
+      "label": "C1 control plane cited authorised KB-009",
+      "pass": true
+    },
+    {
+      "label": "C2 genuine draft ACCEPTED; Rp750.000 grounded",
+      "pass": true
+    },
+    {
+      "label": "C2 both sources cited, old SOP superseded",
+      "pass": true
+    },
+    {
+      "label": "C3 genuine refusal DISCARDED",
+      "pass": true
+    },
+    {
+      "label": "C4 genuine refusal DISCARDED",
+      "pass": true
+    },
+    {
+      "label": "Uji 1 PERSIS SAMA (byte-identical final answer)",
+      "pass": true
+    },
+    {
+      "label": "Fabricated Rp1.250.000 REJECTED",
+      "pass": true
+    },
+    {
+      "label": "Audit chain written for every case",
+      "pass": true
+    }
+  ],
+  "summary": {
+    "total": 9,
+    "pass": 9,
+    "fail": 0,
+    "uji1ByteIdentical": true,
+    "f01ReproducedThisRun": false,
+    "exitOk": true
+  },
+  "reproduction": {
+    "command": "cd . && node tests/genuine-e2e-demo.js",
+    "guardVerificationCommands": [
+      "node agent/run.js selftest-a        # 23/23",
+      "node agent/run.js selftest          # 20/20",
+      "node agent/run.js selftest-guard    # 15/15",
+      "node agent/run.js verify-final      # 16/16 (E07-E10 replay genuine model drafts through the guard)"
+    ],
+    "modelStepNote": "The model inference step is genuine but was produced by the assistant session-native model channel, not by a standalone shell command and not by the host platform. Guard verification is fully reproducible offline via verify-final; the model drafts themselves are captured artefacts, not a platform export."
+  },
+  "integrity": {
+    "draftsSha256": "0026416dc90047ef16b59c6ceee5b2f7a01a8b3b41260e0bd694d0df0b19719c",
+    "workflowJsonSha256": "40168fde8860d94e8a6016541c0af6c625213e0c46280e53840f7f548b0c6a07",
+    "outputGuardSha256": "5b6165f7c3cde074241b2e007d943bda64429e969a285d56519d5dc59b768a09",
+    "knowledgeSha256": "4cf94c712769f4e7d002571c98d7932bb54a4b67bcbefb3e0d178acee747dba0"
+  }
+}

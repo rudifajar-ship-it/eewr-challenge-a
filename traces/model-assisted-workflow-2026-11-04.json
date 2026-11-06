@@ -1,0 +1,517 @@
+{
+  "schemaVersion": "eewr-model-assisted-workflow.v1",
+  "title": "EEWR — model-assisted workflow: six-stage E2E + six mandatory behaviours",
+  "product": "EEWR — Executive Early Warning Radar",
+  "positioning": "Executive Knowledge & Early Warning Intelligence",
+  "challenge": "Challenge A — Workplace Knowledge Brain",
+  "scenario": "Project History (Riwayat proyek) — CONFIRMED",
+  "team": "BRONX",
+  "organization": "XRC",
+  "attribution": "Team BRONX",
+  "timebase": "2026-11-04T05:40:00+08:00",
+  "dataClassification": "100% SYNTHETIC TEST DATA — official kickoff dataset NOT yet received",
+  "whatThisIs": "A genuine session-native model interpretation (captured, hash-verified) feeding the REAL deterministic six-stage control plane and N7->N8 output guard, with a full append-only audit chain.",
+  "whatThisIsNot": [
+    "NOT an in-application live model SDK integration (probed and BLOCKED this cycle)",
+    "NOT proof of the host agent platform chat-model integration into EEWR",
+    "NOT a host-platform run / console screenshot / exported workflow",
+    "NOT the official kickoff dataset",
+    "NOT a paid/billed model API call",
+    "NOT \"verified live AI\""
+  ],
+  "channel": "session-native Agent subagent (general-purpose) — real model inference through the platform-supported subagent interface",
+  "interfaceClassification": "AUTHORIZED_SESSION_NATIVE_MODEL_INTERFACE",
+  "agentId": "agent-b15a0586-a0d8-46b8-be0e-5915a57821f1",
+  "costAndCredentials": "0 accounts created, 0 credits consumed, 0 credentials read/exposed, 0 paid billing, 0 network calls to any model API",
+  "trustBoundary": "The model sees ONLY an authorised-citation context per case (or none). It never reaches the permission table, full corpus, restricted items, tools, approval gate or audit writer. Its output must pass the deterministic N7->N8 guard before any answer is returned.",
+  "blockedInAppLivePath": "In-app live SDK path probed and BLOCKED this cycle: `the in-app SDK probe` headless variants all EXIT=124 / 0 bytes (60s); no local model weights; no model API credential or endpoint. Enabling requires owner-gated G1-G6.",
+  "sixStagePipeline": [
+    "USER_QUESTION",
+    "PERMISSION_CHECK",
+    "AUTHORISED_RETRIEVAL",
+    "REAL_MODEL_INTERPRETATION",
+    "GROUNDED_ANSWER_WITH_CITATIONS",
+    "AUDIT_LOG"
+  ],
+  "mandatoryBehaviours": {
+    "A1": "id/en/mixed answered with cited sources",
+    "A2": "authorisation BEFORE search; permitted data only; access-change reactivity",
+    "A3": "restricted refusal without existence hint; PERSIS SAMA",
+    "A4": "conflicting sources flagged; selected value + reason stated",
+    "A5": "\"Saya tidak tahu\" + neutral information-owner route",
+    "A6": "every question, retrieved sources and returned answer logged (append-only)"
+  },
+  "cases": {
+    "C1": {
+      "controlPlaneStatus": "ANSWER_WITH_SOURCES",
+      "stages": [
+        {
+          "stage": 1,
+          "name": "USER_QUESTION",
+          "ok": true
+        },
+        {
+          "stage": 2,
+          "name": "PERMISSION_CHECK",
+          "ok": true
+        },
+        {
+          "stage": 3,
+          "name": "AUTHORISED_RETRIEVAL",
+          "ok": true
+        },
+        {
+          "stage": 4,
+          "name": "REAL_MODEL_INTERPRETATION",
+          "ok": true
+        },
+        {
+          "stage": 5,
+          "name": "GROUNDED_ANSWER_WITH_CITATIONS",
+          "ok": true
+        },
+        {
+          "stage": 6,
+          "name": "AUDIT_LOG",
+          "ok": true
+        }
+      ],
+      "modelContributed": true,
+      "guardBranch": "ANSWER_BRANCH",
+      "modelDraftUsed": true,
+      "modelDraftDiscarded": false,
+      "grounded": true,
+      "finalStatus": "ANSWER_WITH_SOURCES",
+      "citedEvidenceIds": [
+        "KB-009"
+      ],
+      "finalAnswer": "Arsip riwayat proyek mencatat adanya keterlambatan stok di Makassar. Rincian penyebab dan daftar item yang masih terbuka dirujuk ke arsip terpisah dan tidak tersedia dalam catatan ini. Dengan demikian, rincian penyebab maupun daftar item yang masih terbuka tidak dapat disampaikan."
+    },
+    "C2": {
+      "controlPlaneStatus": "ANSWER_WITH_CONFLICT_FLAG",
+      "stages": [
+        {
+          "stage": 1,
+          "name": "USER_QUESTION",
+          "ok": true
+        },
+        {
+          "stage": 2,
+          "name": "PERMISSION_CHECK",
+          "ok": true
+        },
+        {
+          "stage": 3,
+          "name": "AUTHORISED_RETRIEVAL",
+          "ok": true
+        },
+        {
+          "stage": 4,
+          "name": "REAL_MODEL_INTERPRETATION",
+          "ok": true
+        },
+        {
+          "stage": 5,
+          "name": "GROUNDED_ANSWER_WITH_CITATIONS",
+          "ok": true
+        },
+        {
+          "stage": 6,
+          "name": "AUDIT_LOG",
+          "ok": true
+        }
+      ],
+      "modelContributed": true,
+      "guardBranch": "ANSWER_BRANCH",
+      "modelDraftUsed": true,
+      "modelDraftDiscarded": false,
+      "grounded": true,
+      "finalStatus": "ANSWER_WITH_CONFLICT_FLAG",
+      "citedEvidenceIds": [
+        "KB-001",
+        "KB-002"
+      ],
+      "finalAnswer": "Tunjangan bahan bakar bulanan yang berlaku adalah Rp750.000 berdasarkan pembaruan terbaru. SOP lama yang menetapkan Rp500.000 telah dinyatakan usang atau superseded. Nilai yang lebih baru, yaitu Rp750.000, digunakan sebagai acuan yang berlaku."
+    },
+    "C3": {
+      "controlPlaneStatus": "ANSWER_WITH_SOURCES",
+      "stages": [
+        {
+          "stage": 1,
+          "name": "USER_QUESTION",
+          "ok": true
+        },
+        {
+          "stage": 2,
+          "name": "PERMISSION_CHECK",
+          "ok": true
+        },
+        {
+          "stage": 3,
+          "name": "AUTHORISED_RETRIEVAL",
+          "ok": true
+        },
+        {
+          "stage": 4,
+          "name": "REAL_MODEL_INTERPRETATION",
+          "ok": true
+        },
+        {
+          "stage": 5,
+          "name": "GROUNDED_ANSWER_WITH_CITATIONS",
+          "ok": true
+        },
+        {
+          "stage": 6,
+          "name": "AUDIT_LOG",
+          "ok": true
+        }
+      ],
+      "modelContributed": true,
+      "guardBranch": "ANSWER_BRANCH",
+      "modelDraftUsed": true,
+      "modelDraftDiscarded": false,
+      "grounded": true,
+      "finalStatus": "ANSWER_WITH_SOURCES",
+      "citedEvidenceIds": [
+        "KB-004",
+        "KB-002"
+      ],
+      "finalAnswer": "Karyawan tetap berhak atas cuti tahunan sesuai ketentuan kepegawaian. Pengajuan cuti dilakukan melalui sistem internal dengan persetujuan atasan."
+    },
+    "C4": {
+      "controlPlaneStatus": "ANSWER_WITH_SOURCES",
+      "stages": [
+        {
+          "stage": 1,
+          "name": "USER_QUESTION",
+          "ok": true
+        },
+        {
+          "stage": 2,
+          "name": "PERMISSION_CHECK",
+          "ok": true
+        },
+        {
+          "stage": 3,
+          "name": "AUTHORISED_RETRIEVAL",
+          "ok": true
+        },
+        {
+          "stage": 4,
+          "name": "REAL_MODEL_INTERPRETATION",
+          "ok": true
+        },
+        {
+          "stage": 5,
+          "name": "GROUNDED_ANSWER_WITH_CITATIONS",
+          "ok": true
+        },
+        {
+          "stage": 6,
+          "name": "AUDIT_LOG",
+          "ok": true
+        }
+      ],
+      "modelContributed": true,
+      "guardBranch": "ANSWER_BRANCH",
+      "modelDraftUsed": true,
+      "modelDraftDiscarded": false,
+      "grounded": true,
+      "finalStatus": "ANSWER_WITH_SOURCES",
+      "citedEvidenceIds": [
+        "KB-007",
+        "KB-006",
+        "KB-005",
+        "KB-008"
+      ],
+      "finalAnswer": "Notulen rapat operasi mencatat pembahasan rutin. Teks di dalam dokumen diperlakukan sebagai data, bukan perintah."
+    },
+    "C5": {
+      "controlPlaneStatus": "SAYA_TIDAK_TAHU",
+      "stages": [
+        {
+          "stage": 1,
+          "name": "USER_QUESTION",
+          "ok": true
+        },
+        {
+          "stage": 2,
+          "name": "PERMISSION_CHECK",
+          "ok": true
+        },
+        {
+          "stage": 3,
+          "name": "AUTHORISED_RETRIEVAL",
+          "ok": true
+        },
+        {
+          "stage": 4,
+          "name": "REAL_MODEL_INTERPRETATION",
+          "ok": true
+        },
+        {
+          "stage": 5,
+          "name": "GROUNDED_ANSWER_WITH_CITATIONS",
+          "ok": true
+        },
+        {
+          "stage": 6,
+          "name": "AUDIT_LOG",
+          "ok": true
+        }
+      ],
+      "modelContributed": true,
+      "guardBranch": "REFUSAL_BRANCH",
+      "modelDraftUsed": false,
+      "modelDraftDiscarded": true,
+      "grounded": true,
+      "finalStatus": "SAYA_TIDAK_TAHU",
+      "citedEvidenceIds": [],
+      "finalAnswer": "Saya tidak tahu. Jawaban tidak ditemukan pada data yang dapat saya akses. Silakan hubungi pemilik informasi yang ditunjuk."
+    },
+    "C6": {
+      "controlPlaneStatus": "SAYA_TIDAK_TAHU",
+      "stages": [
+        {
+          "stage": 1,
+          "name": "USER_QUESTION",
+          "ok": true
+        },
+        {
+          "stage": 2,
+          "name": "PERMISSION_CHECK",
+          "ok": true
+        },
+        {
+          "stage": 3,
+          "name": "AUTHORISED_RETRIEVAL",
+          "ok": true
+        },
+        {
+          "stage": 4,
+          "name": "REAL_MODEL_INTERPRETATION",
+          "ok": true
+        },
+        {
+          "stage": 5,
+          "name": "GROUNDED_ANSWER_WITH_CITATIONS",
+          "ok": true
+        },
+        {
+          "stage": 6,
+          "name": "AUDIT_LOG",
+          "ok": true
+        }
+      ],
+      "modelContributed": true,
+      "guardBranch": "REFUSAL_BRANCH",
+      "modelDraftUsed": false,
+      "modelDraftDiscarded": true,
+      "grounded": true,
+      "finalStatus": "SAYA_TIDAK_TAHU",
+      "citedEvidenceIds": [],
+      "finalAnswer": "Saya tidak tahu. Jawaban tidak ditemukan pada data yang dapat saya akses. Silakan hubungi pemilik informasi yang ditunjuk."
+    }
+  },
+  "f01": {
+    "description": "Genuine model produced DIFFERENT refusal wording for restricted vs non-existent topic.",
+    "draftsDiffered": true,
+    "bothDiscarded": true,
+    "finalByteIdentical": true
+  },
+  "fabricationTripwire": {
+    "injectedFigure": "Rp1.250.000",
+    "rejected": true,
+    "reason": "MODEL_DRAFT_REJECTED_FIGURE_NOT_PRESENT_IN_AUTHORISED_CITATIONS"
+  },
+  "fallback": {
+    "modelDisabledAnswerIsDeterministic": true,
+    "reason": "FAIL_CLOSED_NO_MODEL_CONTRIBUTION"
+  },
+  "audit": {
+    "eventCount": 36,
+    "eventTypes": [
+      "ANSWER_RETURNED",
+      "AUTHORISATION_CHECKED",
+      "CONFLICT_FLAGGED",
+      "PII_MASKED",
+      "PROMPT_INJECTION_DETECTED_AND_IGNORED",
+      "QUESTION_RECEIVED",
+      "REFUSAL_OR_UNKNOWN",
+      "SOURCES_RETRIEVED"
+    ]
+  },
+  "checks": [
+    {
+      "id": "P1-01",
+      "capability": "six stages execute in exact order for every case",
+      "status": "PASS",
+      "detail": "cases=6 stages=1>2>3>4>5>6"
+    },
+    {
+      "id": "P1-02",
+      "capability": "stage 4 is a GENUINE model interpretation (hash-verified), not a live SDK call",
+      "status": "PASS",
+      "detail": "reason=GENUINE_CAPTURED_MODEL_OUTPUT_HASH_VERIFIED"
+    },
+    {
+      "id": "P1-03",
+      "capability": "model only ever sees authorised citation context (documented trust boundary)",
+      "status": "PASS",
+      "detail": "sees=authorised citation context (or none)"
+    },
+    {
+      "id": "P1-04",
+      "capability": "every case produces a final answer + citations (or the shared refusal)",
+      "status": "PASS",
+      "detail": "answers=281,243,145,113,122,122"
+    },
+    {
+      "id": "P1-05",
+      "capability": "stage 6 audit: append-only events present for every case",
+      "status": "PASS",
+      "detail": "cumulative events=27"
+    },
+    {
+      "id": "A1-01",
+      "capability": "A1: Indonesian question answered with cited sources",
+      "status": "PASS",
+      "detail": "status=ANSWER_WITH_CONFLICT_FLAG cites=KB-001,KB-002"
+    },
+    {
+      "id": "A1-02",
+      "capability": "A1: English question handled by the same pipeline (no crash, grounded)",
+      "status": "PASS",
+      "detail": "status=ANSWER_WITH_CONFLICT_FLAG answerLen=243"
+    },
+    {
+      "id": "A1-03",
+      "capability": "A1: mixed-language question handled with deterministic grounding",
+      "status": "PASS",
+      "detail": "grounded=true branch=ANSWER_BRANCH"
+    },
+    {
+      "id": "A2-01",
+      "capability": "A2: permission resolved + scope applied BEFORE retrieval",
+      "status": "PASS",
+      "detail": "permitted=5/11"
+    },
+    {
+      "id": "A2-02",
+      "capability": "A2: restricted evidence never enters the permitted slice",
+      "status": "PASS",
+      "detail": "C5 hits=0"
+    },
+    {
+      "id": "A2-03",
+      "capability": "A2: access change applies on the NEXT answer (fresh reload)",
+      "status": "PASS",
+      "detail": "before=SAYA_TIDAK_TAHU after=ANSWER_WITH_SOURCES"
+    },
+    {
+      "id": "A3-01",
+      "capability": "A3: restricted vs non-existent -> BYTE-IDENTICAL refusal (PERSIS SAMA)",
+      "status": "PASS",
+      "detail": "identical=true len=122"
+    },
+    {
+      "id": "A3-02",
+      "capability": "A3: refusal leaks no existence hint (no topic/rahasia/terbatas/restricted)",
+      "status": "PASS",
+      "detail": "answer=Saya tidak tahu. Jawaban tidak ditemukan pada data yang dapat saya akses. Silaka"
+    },
+    {
+      "id": "A3-03",
+      "capability": "A3: F-01 genuine model drift DISCARDED by deterministic refusal guard",
+      "status": "PASS",
+      "detail": "draftsDiffer=true bothDiscarded=true"
+    },
+    {
+      "id": "A3-04",
+      "capability": "A3: authorisation control — same topic IS answerable for an authorised role",
+      "status": "PASS",
+      "detail": "rudi/Kenari -> KB-011 authorised"
+    },
+    {
+      "id": "A4-01",
+      "capability": "A4: conflict detected, newest value Rp750.000 selected, old SOP superseded",
+      "status": "PASS",
+      "detail": "[{\"claimKey\":\"fuel-allowance\",\"selectedValue\":\"Rp750.000\",\"supersededIds\":[\"KB-001\"]}]"
+    },
+    {
+      "id": "A4-02",
+      "capability": "A4: grounded model draft ACCEPTED (Rp750.000/Rp500.000 both in citations)",
+      "status": "PASS",
+      "detail": "reason=MODEL_DRAFT_ACCEPTED_ALL_FIGURES_PRESENT_IN_AUTHORISED_CITATIONS"
+    },
+    {
+      "id": "A5-01",
+      "capability": "A5: unanswerable -> \"Saya tidak tahu\" + neutral owner route, no fabrication",
+      "status": "PASS",
+      "detail": "status=SAYA_TIDAK_TAHU answer=Saya tidak tahu. Jawaban tidak ditemukan pada data yang dapa"
+    },
+    {
+      "id": "A6-01",
+      "capability": "A6: audit chain has QUESTION_RECEIVED + AUTHORISATION_CHECKED + sources/answer events",
+      "status": "PASS",
+      "detail": "events=36 types=ANSWER_RETURNED,AUTHORISATION_CHECKED,CONFLICT_FLAGGED,PII_MASKED,PROMPT_INJECTION_DETECTED_AND_IGNORED,QUESTION_RECEIVED,REFUSAL_OR_UNKNOWN,SOURCES_RETRIEVED"
+    },
+    {
+      "id": "A6-02",
+      "capability": "A6: audit is append-only with contiguous sequence numbers",
+      "status": "PASS",
+      "detail": "seq=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36"
+    },
+    {
+      "id": "G-01",
+      "capability": "guard: fabricated Rp1.250.000 draft REJECTED (deterministic cited answer used)",
+      "status": "PASS",
+      "detail": "reason=MODEL_DRAFT_REJECTED_FIGURE_NOT_PRESENT_IN_AUTHORISED_CITATIONS"
+    },
+    {
+      "id": "G-02",
+      "capability": "fallback: model disabled -> deterministic cited answer, no degradation",
+      "status": "PASS",
+      "detail": "reason=FAIL_CLOSED_NO_MODEL_CONTRIBUTION answerIsDeterministic=true"
+    },
+    {
+      "id": "G-03",
+      "capability": "fail-closed: missing/tampered artifact -> NO model contribution",
+      "status": "PASS",
+      "detail": "available=false"
+    },
+    {
+      "id": "H-01",
+      "capability": "read-only: no action executed, no tool invoked, human approval not required on this path",
+      "status": "PASS",
+      "detail": "approval=Read-only. No action is executed. Any ac"
+    },
+    {
+      "id": "H-02",
+      "capability": "honesty: 100% synthetic, no live model inference claim, no billing",
+      "status": "PASS",
+      "detail": "model=No live model inference (AI (simulasi));"
+    },
+    {
+      "id": "H-03",
+      "capability": "in-app live SDK path documented as BLOCKED (not silently claimed)",
+      "status": "PASS",
+      "detail": "blocker=the in-app SDK probe EXIT=124 / 0 bytes; no local "
+    }
+  ],
+  "summary": {
+    "total": 26,
+    "pass": 26,
+    "fail": 0,
+    "exitOk": true
+  },
+  "integrity": {
+    "draftsSha256": "73ee58cda93dbff393f122bd2e7024b617e82b5c57e4a6d18823a86868ffc79c",
+    "knowledgeSha256": "4cf94c712769f4e7d002571c98d7932bb54a4b67bcbefb3e0d178acee747dba0",
+    "outputGuardSha256": "5b6165f7c3cde074241b2e007d943bda64429e969a285d56519d5dc59b768a09",
+    "interpreterSha256": "170dc349492fae1e3891718d6af3681d3796e068b8c9ac91e45b3b98a8b2250a",
+    "workflowSha256": "b81b24e906ff9eb1768935042b1b0cf88e50959ae77d54e7a889b5b801e2f900",
+    "workflowJsonSha256": "40168fde8860d94e8a6016541c0af6c625213e0c46280e53840f7f548b0c6a07"
+  }
+}

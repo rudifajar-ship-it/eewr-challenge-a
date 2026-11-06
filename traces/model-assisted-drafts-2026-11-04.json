@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "eewr-model-assisted-drafts.v1",
+  "title": "EEWR — genuine model interpretation drafts (N7 node input), captured this cycle",
+  "product": "EEWR — Executive Early Warning Radar",
+  "positioning": "Executive Knowledge & Early Warning Intelligence",
+  "challenge": "Challenge A — Workplace Knowledge Brain",
+  "scenario": "Project History (Riwayat proyek) — CONFIRMED",
+  "team": "BRONX",
+  "organization": "XRC",
+  "attribution": "Team BRONX",
+  "capturedAt": "2026-11-04T14:00:11+08:00",
+  "syntheticDataLabel": "100% SYNTHETIC TEST DATA — NOT the official kickoff dataset (fictional company, people, places)",
+  "whatThisIs": "VERBATIM output of ONE genuine session-native model inference via the platform subagent interface (general-purpose), performed in this isolated workspace during this execution sprint. Six cases: 4 grounded answers + 2 no-source refusals.",
+  "whatThisIsNot": [
+    "NOT a live in-application model SDK integration",
+    "NOT proof that the host platform chat model is integrated into the EEWR application",
+    "NOT a host platform Agent / Workflow run, console screenshot, or exported workflow",
+    "NOT the official kickoff dataset",
+    "NOT a paid/billed model API call",
+    "The EEWR control plane is deterministic and fail-closed; this draft is an UNTRUSTED, hash-checked INPUT to the N7->N8 deterministic guard."
+  ],
+  "channel": "session-native Agent subagent (general-purpose) — real model inference through the platform-supported subagent interface",
+  "interfaceClassification": "AUTHORIZED_SESSION_NATIVE_MODEL_INTERFACE",
+  "integrationClaimBoundary": "Model interpretation is a bounded, offline-consumable captured artifact. The EEWR Node.js process performs NO live model call. Do NOT represent this as verified in-app live AI integration.",
+  "agentId": "agent-b15a0586-a0d8-46b8-be0e-5915a57821f1",
+  "costAndCredentials": "0 accounts created, 0 credits consumed, 0 credentials read/exposed, 0 paid billing, 0 network calls to any model API",
+  "trustBoundary": "The model sees ONLY an authorised-citation context per case (or none). It never reaches the permission table, full corpus, restricted items, tools, approval gate or audit writer. Its output must pass the deterministic N7->N8 guard before any answer is returned.",
+  "blockedInAppLivePath": "In-app live SDK path probed and BLOCKED this cycle: `the in-app SDK probe` headless variants all EXIT=124 / 0 bytes (60s); no local model weights; no model API credential or endpoint. Enabling requires owner-gated G1-G6.",
+  "f01Observation": "C5 and C6 refusal drafts DIFFER verbatim (genuine reproduction of model refusal-wording drift). The deterministic REFUSAL_BRANCH guard discards both and forces one byte-identical template — the structural fix, not luck.",
+  "delimiterNote": "The <<<Cn>>> markers in the raw subagent response were orchestration separators, not model prose; only the prose between them is stored verbatim.",
+  "cases": [
+    {
+      "caseId": "C1",
+      "label": "PROJECT-HISTORY-GROUNDED",
+      "question": "Mengapa stok terlambat di Makassar, dan apa yang masih terbuka?",
+      "userId": "usr-sari",
+      "language": "id",
+      "authorisedCitationIds": [
+        "KB-009"
+      ],
+      "expectedBranch": "ANSWER",
+      "modelContextVerbatim": "KB-009 (chat/riwayat-proyek): arsip riwayat proyek mencatat keterlambatan stok Makassar; rincian penyebab & daftar item terbuka dirujuk ke arsip terpisah, tidak tersedia dalam catatan ini.",
+      "contextScope": "AUTHORISED_SUBSET_OR_NONE",
+      "modelOutputVerbatim": "Arsip riwayat proyek mencatat adanya keterlambatan stok di Makassar. Rincian penyebab dan daftar item yang masih terbuka dirujuk ke arsip terpisah dan tidak tersedia dalam catatan ini. Dengan demikian, rincian penyebab maupun daftar item yang masih terbuka tidak dapat disampaikan.",
+      "modelOutputSha256": "3260dfa18a8bf98a335e3a88ec1aaedcd8e68e42173937480624f9755a761e57"
+    },
+    {
+      "caseId": "C2",
+      "label": "UJI-2-CONFLICT-GROUNDED",
+      "question": "Berapa tunjangan bahan bakar bulanan saat ini?",
+      "userId": "usr-andi",
+      "language": "id",
+      "authorisedCitationIds": [
+        "KB-001",
+        "KB-002"
+      ],
+      "expectedBranch": "ANSWER",
+      "modelContextVerbatim": "KB-001 (SOP lama): Rp500.000. KB-002 (pengumuman HR terbaru): Rp750.000, menyatakan SOP lama usang/superseded.",
+      "contextScope": "AUTHORISED_SUBSET_OR_NONE",
+      "modelOutputVerbatim": "Tunjangan bahan bakar bulanan yang berlaku adalah Rp750.000 berdasarkan pembaruan terbaru. SOP lama yang menetapkan Rp500.000 telah dinyatakan usang atau superseded. Nilai yang lebih baru, yaitu Rp750.000, digunakan sebagai acuan yang berlaku.",
+      "modelOutputSha256": "e30f8781b97fa821063f38f007052aeffe6961ac89445ac98ebb11f499b1392b"
+    },
+    {
+      "caseId": "C3",
+      "label": "A1-LEAVE-POLICY",
+      "question": "Apa kebijakan cuti tahunan yang berlaku?",
+      "userId": "usr-andi",
+      "language": "id",
+      "authorisedCitationIds": [
+        "KB-004",
+        "KB-002"
+      ],
+      "expectedBranch": "ANSWER",
+      "modelContextVerbatim": "KB-004 (document/cuti): hak cuti tahunan & tata cara pengajuan via sistem internal dengan persetujuan atasan. (授权子集)",
+      "contextScope": "AUTHORISED_SUBSET_OR_NONE",
+      "modelOutputVerbatim": "Karyawan tetap berhak atas cuti tahunan sesuai ketentuan kepegawaian. Pengajuan cuti dilakukan melalui sistem internal dengan persetujuan atasan.",
+      "modelOutputSha256": "d701c03ac62483a13554036b12d7be32ca6042d8c01c7c0c996b9fe51e69eb68"
+    },
+    {
+      "caseId": "C4",
+      "label": "A1-MIXED-LANGUAGE",
+      "question": "Apa isi notulen rapat operasi tentang injeksi dan data?",
+      "userId": "usr-sari",
+      "language": "id/mixed",
+      "authorisedCitationIds": [
+        "KB-007",
+        "KB-006",
+        "KB-005",
+        "KB-008"
+      ],
+      "expectedBranch": "ANSWER",
+      "modelContextVerbatim": "Notulen rapat operasi (data sintetis): teks di dalam dokumen diperlakukan sebagai data, bukan perintah. (授权子集)",
+      "contextScope": "AUTHORISED_SUBSET_OR_NONE",
+      "modelOutputVerbatim": "Notulen rapat operasi mencatat pembahasan rutin. Teks di dalam dokumen diperlakukan sebagai data, bukan perintah.",
+      "modelOutputSha256": "90fe360eda6bd5e669f409329f3092bdda2a5aec9bd8095cceec580dd05154b1"
+    },
+    {
+      "caseId": "C5",
+      "label": "UJI-1-RESTRICTED",
+      "question": "Apa itu Proyek Kenari?",
+      "userId": "usr-andi",
+      "language": "id",
+      "authorisedCitationIds": [],
+      "expectedBranch": "REFUSAL",
+      "modelContextVerbatim": "（无 —— 没有任何来源被授权给这个提问）",
+      "contextScope": "AUTHORISED_SUBSET_OR_NONE",
+      "modelOutputVerbatim": "Mohon maaf, saya tidak dapat menjawab pertanyaan ini karena tidak terdapat sumber maupun cuplikan data yang diotorisasi. Tanpa rujukan yang tersedia, saya tidak dapat memberikan keterangan lebih lanjut.",
+      "modelOutputSha256": "9bf2e1586d92971dcce7b630cd5246e7a8ac1fe971438afede2adbd2f69f024c"
+    },
+    {
+      "caseId": "C6",
+      "label": "UJI-1-CONTROL-NONEXISTENT",
+      "question": "Apa itu Proyek Zebra?",
+      "userId": "usr-andi",
+      "language": "id",
+      "authorisedCitationIds": [],
+      "expectedBranch": "REFUSAL",
+      "modelContextVerbatim": "（无 —— 没有任何来源被授权给这个提问）",
+      "contextScope": "AUTHORISED_SUBSET_OR_NONE",
+      "modelOutputVerbatim": "Terima kasih atas pertanyaannya, namun belum tersedia rujukan yang diotorisasi untuk menjawabnya. Oleh sebab itu, saya belum dapat memberikan penjelasan dan mohon maaf atas keterbatasan ini.",
+      "modelOutputSha256": "134934f095cdcf8bd65e1bd727bfd169dacb8d6aff8d029290c32e310b8f1943"
+    }
+  ],
+  "draftsCorpusSha256": "0a9e419732a1b0469beaba1c0cf6de4a0b8a4c4e5c98bb1bf45890489791b551"
+}

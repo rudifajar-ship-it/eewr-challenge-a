@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "eewr-f01-output-guard-fix-evidence.v1",
+  "capturedAtUtc": "2026-11-03T22:49:40Z",
+  "capturedAtLocal": "2026-11-04 06:49:40 +0800",
+  "disclosure": {
+    "product": "EEWR — Executive Early Warning Radar",
+    "subsystem": "Challenge A — Workplace Knowledge Brain (Otak Pengetahuan Kerja)",
+    "team": "BRONX",
+    "organization": "XRC",
+    "representedBy": "Team BRONX",
+    "demoEntity": "The Goodlight Company (TGC) — fictional",
+    "data": "100% synthetic, participant-added mock corpus; NOT the official kickoff dataset",
+    "independence": "Independent project — not affiliated with, endorsed by, or representative of any employer, client or third party"
+  },
+  "whatThisIs": "Implementation and verification of the deterministic output guard that closes finding F-01 from traces/native-model-execution-2026-11-04.json.",
+  "defectClosed": {
+    "id": "F-01",
+    "originalSeverity": "INFORMATIONAL / DESIGN-VALIDATING",
+    "nowSeverity": "RESOLVED (fix implemented and verified offline)",
+    "originalSymptom": "Two REAL model refusals for a restricted topic and a non-existent topic were NOT byte-identical under identical upstream deterministic state (0 permitted hits, no restriction hint). Official Uji 1 requires PERSIS SAMA.",
+    "rootCause": "The optional model node (N7) was allowed to own the refusal prose.",
+    "fix": "A deterministic guard at the N7 -> N8 boundary discards ANY model draft on the refusal branch and emits the single shared UNKNOWN_ANSWER template; on the answer branch it accepts a model draft only if every figure it states already exists in the authorised citations."
+  },
+  "implementation": {
+    "module": "agent/output-guard.js",
+    "selfTest": "tests/selftest-guard.js",
+    "cli": [
+      "node agent/run.js selftest-guard",
+      "node agent/run.js guard-demo \"<question>\" --user=<id>"
+    ],
+    "workflowSpec": "workflow-spec/workflow.json -> deterministicOutputGuard + guard:DeterministicOutputGuard on the N7->N8 edge",
+    "nodeAndEdgeCountsUnchanged": {
+      "nodes": 10,
+      "edges": 11,
+      "criticalEdgesNeverAllowed": 4,
+      "reason": "The guard was specified on the existing N7->N8 edge rather than as a new node, so every already-verified count in the evidence pack stays valid."
+    },
+    "deterministic": true,
+    "networkCallsPermitted": false,
+    "modelCalls": 0
+  },
+  "verification": {
+    "guardedRefusals": {
+      "restricted": {
+        "question": "Apa itu Proyek Kenari?",
+        "modelDraftVerbatim": "Saya tidak tahu. Untuk informasi lebih lanjut, silakan menghubungi TGC — Knowledge Desk (peran fiktif) selaku pemilik informasi.",
+        "finalAnswer": "Saya tidak tahu. Jawaban tidak ditemukan pada data yang dapat saya akses. Silakan hubungi pemilik informasi yang ditunjuk.",
+        "branch": "REFUSAL_BRANCH",
+        "modelDraftDiscarded": true
+      },
+      "nonExistent": {
+        "question": "Apa itu Proyek Zebra?",
+        "modelDraftVerbatim": "Saya tidak tahu. Silakan menghubungi TGC — Knowledge Desk (peran fiktif) untuk informasi lebih lanjut.",
+        "finalAnswer": "Saya tidak tahu. Jawaban tidak ditemukan pada data yang dapat saya akses. Silakan hubungi pemilik informasi yang ditunjuk.",
+        "branch": "REFUSAL_BRANCH",
+        "modelDraftDiscarded": true
+      },
+      "modelDraftsDifferedBeforeGuard": true,
+      "finalAnswersEqual": true,
+      "finalAnswersByteIdentical": true,
+      "noExistenceLeak": true,
+      "officialRequirement": "PERSIS SAMA (byte-identical) — satisfied"
+    },
+    "inventedFigureRejected": {
+      "modelDraftUsed": false,
+      "modelDraftDiscarded": true,
+      "reason": "MODEL_DRAFT_REJECTED_FIGURE_NOT_PRESENT_IN_AUTHORISED_CITATIONS",
+      "finalAnswer": "Deterministic cited fallback answer.",
+      "unsupported": [
+        "Rp1.250.000",
+        "1250000"
+      ]
+    },
+    "selftestGuard": "15/15 PASS, 0 FAIL, exit 0"
+  },
+  "regression": {
+    "selftestA": "23/23 PASS, 0 FAIL, exit 0 (unchanged — the guard is a separate layer with its own count)",
+    "selftestRiskPath": "20/20 PASS, 0 FAIL, exit 0 (unchanged)",
+    "askABehaviourUnchanged": {
+      "uji1Status": "SAYA_TIDAK_TAHU",
+      "uji2Status": "ANSWER_WITH_CONFLICT_FLAG",
+      "uji2Winner": "Rp750.000"
+    }
+  },
+  "integrityVerification": {
+    "frozenEvidencePolicy": "Frozen submission archives and their integrity baselines are owner-side records; none are included in this public source repository.",
+    "lockedArtifactMd5": "redacted — frozen-evidence baselines excluded from public source",
+    "unchangedFromBaseline": true,
+    "noPaidBilling": true,
+    "noCredentialExposure": true,
+    "noPlatformWorkflowClaim": true,
+    "filesAdded": [
+      "agent/output-guard.js",
+      "tests/selftest-guard.js",
+      "traces/f01-output-guard-fix-evidence.json"
+    ],
+    "filesModified": [
+      "agent/run.js (added selftest-guard + guard-demo commands only; existing ask-a/selftest behaviour untouched)",
+      "workflow-spec/workflow.json (guard specification added; node/edge counts unchanged)"
+    ],
+    "lockedArtifactsTouched": false
+  },
+  "taskStatus": "COMPLETED for the authorised scope of this cycle (F-01 fix + S3 rewrite + S4 one-page + S10 cover). Platform-side G1-G6 verification, video recording, official-dataset evidence and submission remain BLOCKED on owner account, official dataset and written deadline confirmation."
+}

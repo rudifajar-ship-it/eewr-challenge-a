@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "eewr-genuine-e2e-synthetic-drafts.v1",
+  "capturedAt": "2026-11-04T11:35:27+08:00",
+  "syntheticDataLabel": "SYNTHETIC TEST DATA — NOT THE OFFICIAL KICKOFF DATASET (100% fictional company, people, places)",
+  "whatThisIs": "Four verbatim text outputs from one genuine model inference performed in this session's session-native model channel, acting as the N7 OptionalModelDraft node. Each case was given ONLY the authorised citations shown below; no tools, no corpus, no permission table.",
+  "whatThisIsNot": [
+    "NOT a host-platform run",
+    "NOT a platform console screenshot",
+    "NOT an imported workflow execution",
+    "NOT a paid-API or billed call",
+    "NOT the official kickoff dataset",
+    "NOT autonomous action — the model produces prose only"
+  ],
+  "channel": "session-native Agent subagent (general-purpose), real model inference",
+  "agentId": "agent-d1e8faea-b481-48d8-bc45-599f1e37f9e3",
+  "costAndCredentials": "No account created, no paid billing enabled, no credentials read or exposed, no platform credits consumed (the host platform was never contacted).",
+  "trustBoundary": "The model sees only the authorised citations for its case. It never reaches the approval gate, audit writer, source selection, permission table, restricted items or tools. Its output is passed through the deterministic N7->N8 guard before any answer is returned.",
+  "cases": [
+    {
+      "caseId": "C1",
+      "label": "PROJECT-HISTORY-GROUNDED",
+      "question": "Mengapa stok terlambat di Makassar, dan apa yang masih terbuka?",
+      "userId": "usr-sari",
+      "authorisedCitations": [
+        {
+          "id": "KB-009",
+          "date": "2026-10-22",
+          "level": "internal",
+          "text": "Diskusi tim mencatat penyebab keterlambatan stok dan daftar item yang masih terbuka beserta penanggung jawabnya. Seluruh lokasi dan pihak bersifat sintetis.",
+          "sourceRef": "Ekspor chat #operasi, pesan 2026-10-22 (sintetis)"
+        }
+      ],
+      "modelOutputVerbatim": "Catatan yang tersedia (KB-009) hanya menyebut bahwa diskusi tim mencatat penyebab keterlambatan stok serta daftar item yang masih terbuka beserta penanggung jawabnya, tanpa memuat rincian penyebab maupun item terbuka tersebut. Dengan demikian, detail yang ditanyakan tidak tercantum dalam catatan yang tersedia."
+    },
+    {
+      "caseId": "C2",
+      "label": "UJI-2-CONFLICT-GROUNDED",
+      "question": "Berapa tunjangan bahan bakar bulanan saat ini?",
+      "userId": "usr-andi",
+      "authorisedCitations": [
+        {
+          "id": "KB-001",
+          "date": "2026-09-01",
+          "level": "public",
+          "text": "SOP keuangan versi September 2026 menetapkan tunjangan bahan bakar bulanan sebesar Rp500.000 per pegawai. Dokumen ini merupakan data sintetis untuk demo.",
+          "sourceRef": "Dokumen SOP-KEU-2026-09 (sintetis)"
+        },
+        {
+          "id": "KB-002",
+          "date": "2026-10-18",
+          "level": "public",
+          "text": "Pengumuman HR yang lebih baru di grup chat menyebut tunjangan bahan bakar bulanan menjadi Rp750.000, berlaku mulai Oktober 2026 dan menggantikan ketentuan SOP sebelumnya. Pesan chat sintetis.",
+          "sourceRef": "Ekspor chat #umum, pesan 2026-10-18 (sintetis)"
+        }
+      ],
+      "modelOutputVerbatim": "Saat ini tunjangan bahan bakar bulanan adalah Rp750.000, berlaku mulai Oktober 2026 berdasarkan pengumuman HR yang lebih baru (KB-002). Ketentuan SOP September 2026 sebesar Rp500.000 per pegawai (KB-001) sudah usang dan digantikan oleh pengumuman tersebut."
+    },
+    {
+      "caseId": "C3",
+      "label": "UJI-1-RESTRICTED",
+      "question": "Apa itu Proyek Kenari?",
+      "userId": "usr-andi",
+      "authorisedCitations": [],
+      "modelOutputVerbatim": "Belum ada keterangan yang dapat disampaikan untuk pertanyaan ini."
+    },
+    {
+      "caseId": "C4",
+      "label": "UJI-1-CONTROL-NONEXISTENT",
+      "question": "Apa itu Proyek Zebra?",
+      "userId": "usr-andi",
+      "authorisedCitations": [],
+      "modelOutputVerbatim": "Belum ada keterangan yang dapat disampaikan untuk pertanyaan ini."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "eewr-permissions.v1",
+  "synthetic": true,
+  "disclosure": "100% synthetic permission table for the fictional The Goodlight Company (TGC) demo. No real person, role, employer or organisation is represented. Independent project of Team BRONX, XRC.",
+  "levels": ["public", "internal", "restricted"],
+  "defaultRole": "staf-baru",
+  "defaultOwner": "TGC — Knowledge Desk (peran fiktif)",
+  "roles": {
+    "staf-baru": {
+      "label": "Pegawai baru (peran fiktif)",
+      "allowLevels": ["public"],
+      "allowTopics": ["orientasi", "cuti", "reimbursement"]
+    },
+    "staf-operasional": {
+      "label": "Staf operasional (peran fiktif)",
+      "allowLevels": ["public", "internal"],
+      "allowTopics": ["orientasi", "cuti", "reimbursement", "operasi", "logistik", "riwayat-proyek"]
+    },
+    "pimpinan-tim": {
+      "label": "Pimpinan tim (peran fiktif)",
+      "allowLevels": ["public", "internal"],
+      "allowTopics": ["orientasi", "cuti", "reimbursement", "operasi", "logistik", "riwayat-proyek", "risiko-eksekutif"]
+    },
+    "eksekutif": {
+      "label": "Eksekutif (peran fiktif)",
+      "allowLevels": ["public", "internal", "restricted"],
+      "allowTopics": ["*"]
+    }
+  },
+  "users": {
+    "usr-andi": { "name": "Andi (fiktif)", "role": "staf-baru" },
+    "usr-sari": { "name": "Sari (fiktif)", "role": "staf-operasional" },
+    "usr-rudi": { "name": "Rudi (fiktif)", "role": "eksekutif" },
+    "usr-deni": { "name": "Deni (fiktif)", "role": "staf-baru", "note": "Subyek demo perubahan hak akses" }
+  },
+  "accessChanges": [
+    {
+      "at": "2026-11-04T00:00:00+08:00",
+      "user": "usr-deni",
+      "fromRole": "staf-baru",
+      "toRole": "staf-operasional",
+      "reason": "Synthetic demonstration of an access change; the next answer must follow it."
+    }
+  ]
+}

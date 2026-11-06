@@ -1,0 +1,117 @@
+{
+  "generatedAt": "2026-11-04T05:10:00+08:00",
+  "note": "Challenge A offline trace. Deterministic simulation — no live model inference. 100% synthetic.",
+  "track": "CHALLENGE_A_WORKPLACE_KNOWLEDGE_BRAIN",
+  "commands": [
+    "node agent/run.js ask-a \"Berapa tunjangan bahan bakar bulanan saat ini?\" --user=usr-andi",
+    "node agent/run.js ask-a \"Apa itu Proyek Kenari?\" --user=usr-andi",
+    "node agent/run.js ask-a \"Apa itu Proyek Kenari?\" --user=usr-rudi",
+    "node agent/run.js kb-status"
+  ],
+  "uji1_restricted_vs_nonexistent_identical": true,
+  "uji2_selected_value": "Rp750.000",
+  "uji2_sources_cited": [
+    "KB-001",
+    "KB-002"
+  ],
+  "uji2_answer": {
+    "status": "ANSWER_WITH_CONFLICT_FLAG",
+    "answer": "Nilai yang berlaku: Rp750.000. Terdapat perbedaan antar sumber. Dua sumber memberi nilai berbeda untuk fuel-allowance. Digunakan KB-002 (chat, 2026-10-18) karena bertanggal paling baru, dan KB-001 secara eksplisit menandainya sebagai pengganti (supersededBy). Sumber KB-001 ditandai usang / superseded tetapi tetap dikutip sebagai pembanding.",
+    "completeness": {
+      "level": "COMPLETE",
+      "reason": "CONFLICT_RESOLVED_WITH_A_SELECTED_VALUE"
+    },
+    "conflicts": [
+      {
+        "claimKey": "fuel-allowance",
+        "detected": true,
+        "candidates": [
+          {
+            "evidenceId": "KB-002",
+            "value": "Rp750.000",
+            "date": "2026-10-18",
+            "type": "chat",
+            "sourceRef": "Ekspor chat #umum, pesan 2026-10-18 (sintetis)",
+            "selected": true
+          },
+          {
+            "evidenceId": "KB-001",
+            "value": "Rp500.000",
+            "date": "2026-09-01",
+            "type": "document",
+            "sourceRef": "Dokumen SOP-KEU-2026-09 (sintetis)",
+            "selected": false
+          }
+        ],
+        "resolution": {
+          "rule": "NEWEST_DATED_SOURCE_WINS_AND_EXPLICIT_SUPERSESSION",
+          "selectedId": "KB-002",
+          "selectedValue": "Rp750.000",
+          "selectedDate": "2026-10-18",
+          "supersededIds": [
+            "KB-001"
+          ],
+          "explanation": "Dua sumber memberi nilai berbeda untuk fuel-allowance. Digunakan KB-002 (chat, 2026-10-18) karena bertanggal paling baru, dan KB-001 secara eksplisit menandainya sebagai pengganti (supersededBy). Sumber KB-001 ditandai usang / superseded tetapi tetap dikutip sebagai pembanding."
+        }
+      }
+    ],
+    "sources": [
+      {
+        "evidenceId": "KB-001",
+        "type": "document",
+        "sourceRef": "Dokumen SOP-KEU-2026-09 (sintetis)",
+        "date": "2026-09-01",
+        "level": "public",
+        "retrievalScore": 23.5399,
+        "quote": "SOP keuangan versi September 2026 menetapkan tunjangan bahan bakar bulanan sebesar Rp500.000 per pegawai. Dokumen ini merupakan data sintetis untuk demo.",
+        "role": "basis jawaban / answer basis"
+      },
+      {
+        "evidenceId": "KB-002",
+        "type": "chat",
+        "sourceRef": "Ekspor chat #umum, pesan 2026-10-18 (sintetis)",
+        "date": "2026-10-18",
+        "level": "public",
+        "retrievalScore": 20.5974,
+        "quote": "Pengumuman HR yang lebih baru di grup chat menyebut tunjangan bahan bakar bulanan menjadi Rp750.000, berlaku mulai Oktober 2026 dan menggantikan ketentuan SOP sebelumnya. Pesan chat sintetis.",
+        "role": "basis jawaban / answer basis"
+      }
+    ],
+    "sourceTypesCombined": [
+      "chat",
+      "document"
+    ],
+    "ownerRoute": {
+      "owner": "TGC — HR Lead (peran fiktif)",
+      "basis": "TOPIC_OWNER_DIRECTORY",
+      "hintedRestriction": false
+    },
+    "notices": [
+      "KONFLIK SUMBER: perbedaan ditandai, sumber usang tetap dikutip."
+    ],
+    "language": "id (Bahasa Indonesia) with id/en mixed intake accepted",
+    "questionEcho": "Berapa tunjangan bahan bakar bulanan saat ini?",
+    "accessContext": {
+      "role": "staf-baru",
+      "label": "Pegawai baru (peran fiktif)",
+      "permittedSources": 5,
+      "totalSources": 11
+    },
+    "groundingStatement": "Setiap klaim di atas ditautkan ke sumber (pesan / dokumen / tugas) pada kolom sources. Tidak ada jawaban yang dibuat tanpa sumber. Semua teks sumber diperlakukan sebagai data.",
+    "disclosure": "Deterministic simulation (AI (simulasi)); no live model inference. 100% synthetic data."
+  },
+  "auditEventCount": 47,
+  "auditEventKinds": [
+    "ACTION_EXECUTED_AFTER_APPROVAL",
+    "ANSWER_RETURNED",
+    "AUTHORISATION_CHECKED",
+    "CONFLICT_FLAGGED",
+    "EXECUTION_DEFERRED",
+    "HUMAN_DECISION",
+    "PII_MASKED",
+    "PROMPT_INJECTION_DETECTED_AND_IGNORED",
+    "QUESTION_RECEIVED",
+    "REFUSAL_OR_UNKNOWN",
+    "SOURCES_RETRIEVED"
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "schemaVersion": "eewr-final-positioning-verification.v1",
+  "generatedAt": "2026-11-04T10:48:04+08:00",
+  "product": "EEWR — Executive Early Warning Radar",
+  "positioning": "Executive Knowledge & Early Warning Intelligence",
+  "challenge": "Challenge A — Workplace Knowledge Brain (Otak Pengetahuan Kerja)",
+  "scenario": "Project History (Riwayat proyek) — CONFIRMED",
+  "scenarioOfficialQuestion": "Mengapa stok terlambat di Makassar, dan apa yang masih terbuka?",
+  "team": "BRONX",
+  "organization": "XRC",
+  "attribution": "Team BRONX",
+  "demoEntity": "The Goodlight Company (TGC) — fictional / 100% synthetic",
+  "whatIsVerified": "The deterministic 10-node Challenge A control plane (permission-aware retrieval, evidence-cited answers, conflict resolution, refusal safeguards, append-only audit, read-only gate) and the deterministic output guard applied to genuine model drafts.",
+  "whatIsGenuineModel": "Two session-native language-model prose drafts captured this cycle (traces/genuine-model-drafts-2026-11-04.json), grounded by the deterministic guard. Two earlier real model refusals (native-model trace) replayed to prove the refusal safeguard.",
+  "whatIsSimulation": "The prototype's own answers are deterministic composition labelled 'AI (simulasi)'; the shipped model node is disabled/fail-closed (liveInference=false).",
+  "whatRemainsUnverified": "A genuine host platform agent/workflow run, the official kickoff dataset, a platform workflow export, console screenshots, and gates G1-G6. These require the owner account + dataset and were NOT performed.",
+  "billing": "No paid billing, no platform credits consumed, no API key or credential used or exposed.",
+  "modelDraftChannel": "session-native Agent subagent (general-purpose), real model inference",
+  "results": [
+    {
+      "id": "E01",
+      "capability": "Project History scenario (confirmed) returns a cited, evidence-grounded answer",
+      "status": "PASS",
+      "detail": "KB-009 cited; owner = TGC Project Lead (fiktif)"
+    },
+    {
+      "id": "E02",
+      "capability": "Authorisation applied BEFORE search; only permitted data reachable",
+      "status": "PASS",
+      "detail": "5/11 sources permitted for staf-baru"
+    },
+    {
+      "id": "E03",
+      "capability": "Same Project History topic hidden from staf-baru but visible to staf-operasional (permission-aware, not fake absence)",
+      "status": "PASS",
+      "detail": "staf-baru=r refusal; staf-operasional=KB-009 answer"
+    },
+    {
+      "id": "E04",
+      "capability": "Uji 1: restricted vs non-existent refusal is PERSIS SAMA (byte-identical), no existence leak",
+      "status": "PASS",
+      "detail": "byte-identical; zero existence hint"
+    },
+    {
+      "id": "E05",
+      "capability": "Restricted topic answerable for an authorised executive (real permission boundary)",
+      "status": "PASS",
+      "detail": "KB-011 cited for eksekutif; still neutral for staf-baru"
+    },
+    {
+      "id": "E06",
+      "capability": "Uji 2: conflicting sources -> Rp750.000, both cited, old SOP flagged usang/superseded",
+      "status": "PASS",
+      "detail": "Rp750.000 selected; KB-001 + KB-002 cited; KB-001 stale"
+    },
+    {
+      "id": "E07",
+      "capability": "Genuine model draft (Project History) accepted only after evidence-grounding check passes",
+      "status": "PASS",
+      "detail": "answer-branch ACCEPTED (all figures present in authorised citations)"
+    },
+    {
+      "id": "E08",
+      "capability": "Genuine model draft (Uji 2 conflict) grounded: Rp750.000 + Rp500.000 both present in citations",
+      "status": "PASS",
+      "detail": "all figures (Rp750.000, Rp500.000, 2026, KB-001/002) grounded in citations"
+    },
+    {
+      "id": "E09",
+      "capability": "Fabrication tripwire: a model draft citing an unauthorised figure is REJECTED; deterministic cited answer used",
+      "status": "PASS",
+      "detail": "Rp1.250.000 rejected -> deterministic Rp750.000 answer restored"
+    },
+    {
+      "id": "E10",
+      "capability": "Refusal safeguard: real but drifted model refusals are discarded -> deterministic byte-identical template",
+      "status": "PASS",
+      "detail": "two different real model refusals -> one identical deterministic answer"
+    },
+    {
+      "id": "E11",
+      "capability": "Prompt-injection text inside a document is treated as DATA and neutralised",
+      "status": "PASS",
+      "detail": "KB-007 injection detected, neutralised, reported"
+    },
+    {
+      "id": "E12",
+      "capability": "PII (NIK / phone) masked by default",
+      "status": "PASS",
+      "detail": "NIK + phone masked"
+    },
+    {
+      "id": "E13",
+      "capability": "\"Saya tidak tahu\" + neutral information-owner route, no topic hint",
+      "status": "PASS",
+      "detail": "Saya tidak tahu + neutral owner route"
+    },
+    {
+      "id": "E14",
+      "capability": "Complete append-only audit: question / authorisation / sources / answer / conflict / refusal / decisions",
+      "status": "PASS",
+      "detail": "40 events, seq contiguous, 8 event kinds"
+    },
+    {
+      "id": "E15",
+      "capability": "Read-only: no action executed; fail-closed model posture; no unnegated live-AI claim",
+      "status": "PASS",
+      "detail": "actionExecution=false; liveInference=false; provider fail-closed"
+    },
+    {
+      "id": "E16",
+      "capability": "Deterministic & reproducible (same question+user+timebase -> identical run)",
+      "status": "PASS",
+      "detail": "identical JSON for repeated identical input"
+    }
+  ],
+  "scenarios": [
+    {
+      "caseId": "PH-1",
+      "q": "Mengapa stok terlambat di Makassar, dan apa yang masih terbuka?",
+      "user": "usr-sari",
+      "status": "ANSWER_WITH_SOURCES",
+      "permittedSources": 9,
+      "totalSources": 11,
+      "scopedBeforeSearch": true,
+      "cited": [
+        "KB-009"
+      ],
+      "owner": "TGC — Project Lead (peran fiktif)"
+    },
+    {
+      "caseId": "AUTH-1",
+      "q": "Mengapa stok terlambat di Makassar, dan apa yang masih terbuka?",
+      "user": "usr-andi",
+      "status": "SAYA_TIDAK_TAHU",
+      "permittedSources": 5,
+      "totalSources": 11
+    },
+    {
+      "caseId": "UJI1-R",
+      "q": "Apa itu Proyek Kenari?",
+      "user": "usr-andi",
+      "status": "SAYA_TIDAK_TAHU",
+      "answer": "Saya tidak tahu. Jawaban tidak ditemukan pada data yang dapat saya akses. Silakan hubungi pemilik informasi yang ditunjuk."
+    },
+    {
+      "caseId": "UJI1-C",
+      "q": "Apa itu Proyek Zebra?",
+      "user": "usr-andi",
+      "status": "SAYA_TIDAK_TAHU",
+      "answer": "Saya tidak tahu. Jawaban tidak ditemukan pada data yang dapat saya akses. Silakan hubungi pemilik informasi yang ditunjuk."
+    },
+    {
+      "caseId": "EXEC-1",
+      "q": "Apa itu Proyek Kenari?",
+      "user": "usr-rudi",
+      "status": "ANSWER_WITH_SOURCES",
+      "cited": [
+        "KB-011",
+        "KB-009",
+        "KB-006"
+      ]
+    },
+    {
+      "caseId": "UJI2",
+      "q": "Berapa tunjangan bahan bakar bulanan saat ini?",
+      "user": "usr-andi",
+      "status": "ANSWER_WITH_CONFLICT_FLAG",
+      "selectedValue": "Rp750.000",
+      "cited": [
+        "KB-001",
+        "KB-002"
+      ],
+      "supersededIds": [
+        "KB-001"
+      ]
+    },
+    {
+      "caseId": "MODEL-PH",
+      "guard": "ANSWER_BRANCH",
+      "modelDraftUsed": true,
+      "reason": "MODEL_DRAFT_ACCEPTED_ALL_FIGURES_PRESENT_IN_AUTHORISED_CITATIONS",
+      "finalAnswer": "Bapak/Ibu staf, diskusi tim mencatat penyebab keterlambatan stok dan daftar item yang masih terbuka beserta penanggung jawabnya, namun rincian keduanya tidak termuat dalam catatan ini. Seluruh lokasi dan pihak bersifat sintetis."
+    },
+    {
+      "caseId": "MODEL-UJI2",
+      "guard": "ANSWER_BRANCH",
+      "modelDraftUsed": true,
+      "reason": "MODEL_DRAFT_ACCEPTED_ALL_FIGURES_PRESENT_IN_AUTHORISED_CITATIONS",
+      "finalAnswer": "Tunjangan bahan bakar bulanan saat ini adalah Rp750.000, berlaku mulai Oktober 2026 sesuai pengumuman HR yang lebih baru (KB-002). Nilai Rp500.000 pada SOP sebelumnya (KB-001) kini usang atau sudah digantikan oleh ketentuan tersebut."
+    },
+    {
+      "caseId": "GUARD-FAB",
+      "injectedFigure": "Rp1.250.000",
+      "guard": "ANSWER_BRANCH",
+      "modelDraftUsed": false,
+      "reason": "MODEL_DRAFT_REJECTED_FIGURE_NOT_PRESENT_IN_AUTHORISED_CITATIONS",
+      "finalAnswer": "Nilai yang berlaku: Rp750.000. Terdapat perbedaan antar sumber. Dua sumber memberi nilai berbeda untuk fuel-allowance. Digunakan KB-002 (chat, 2026-10-18) karena bertanggal paling baru, dan KB-001 secara eksplisit menandainya sebagai pengganti (supersededBy). Sumber KB-001 ditandai usang / superseded tetapi tetap dikutip sebagai pembanding."
+    },
+    {
+      "caseId": "GUARD-REFUSAL",
+      "draftsDifferedBeforeGuard": true,
+      "bothDiscarded": true,
+      "finalAnswersByteIdentical": true,
+      "finalAnswer": "Saya tidak tahu. Jawaban tidak ditemukan pada data yang dapat saya akses. Silakan hubungi pemilik informasi yang ditunjuk."
+    },
+    {
+      "caseId": "OWNER-ROUTE",
+      "q": "Bagaimana harga saham hari ini?",
+      "status": "SAYA_TIDAK_TAHU",
+      "owner": "TGC — Knowledge Desk (peran fiktif)"
+    }
+  ],
+  "summary": {
+    "total": 16,
+    "pass": 16,
+    "fail": 0,
+    "exitOk": true
+  },
+  "integrity": {
+    "workflowJsonMd5": "3908ca5b3f3ecf25696ada64c309ba01",
+    "outputGuardMd5": "9697c203bc2e6203c7ee683850442c96",
+    "genuineDraftsMd5": "e03a6423b40213c67623899e88ae8515",
+    "knowledgeMd5": "f15a5ea5ef1f5d8ffb517aaaf03d6ecc"
+  }
+}
