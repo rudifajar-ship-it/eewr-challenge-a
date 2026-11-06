@@ -1,0 +1,20 @@
+# Mutable runtime output — never commit
+state/
+*.log
+*.tmp
+
+# Local tooling / secrets — must never be added
+.env
+.env.*
+*.pem
+*.key
+node_modules/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+
+# Keep the manifest and all traces under version control
+!REPO-MANIFEST.json
+!traces/
